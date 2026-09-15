@@ -143,7 +143,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); }
 .suggestion:last-child { border-bottom: 0; }
 .suggestion:hover, .suggestion[aria-selected="true"] { background: var(--accent-soft); }
 .question-flow { padding: 0 clamp(1.5rem, 4vw, 2.5rem) 1.5rem; }
-.choice-list { display: grid; gap: .55rem; margin: 1rem 0; }
+.choice-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr)); gap: .55rem; margin: 1rem 0; }
 .choice {
   min-height: 3rem; border: 1px solid #aebbb8; border-radius: var(--radius-sm);
   background: white; color: var(--ink); text-align: left; padding: .75rem 1rem; font-weight: 650;
@@ -264,6 +264,16 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); }
 .wage-table th, .wage-table td { border-bottom: 1px solid var(--line); padding: .75rem .5rem; text-align: left; }
 .wage-table th { font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
 .wage-table-cards { display: none; }
+.occupation-directory { display: grid; gap: 2rem; margin-top: 1.5rem; }
+.directory-group h3 { font-size: 1.05rem; margin-bottom: .75rem; }
+.directory-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .65rem; }
+.directory-card {
+  display: grid; gap: .2rem; width: 100%; text-align: left; min-height: 3.25rem;
+  padding: .85rem 1rem; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.directory-card strong { font-size: .98rem; }
+.directory-status { color: var(--muted); font-size: .82rem; font-weight: 650; }
 .wage-scale-card { border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .9rem 1rem; }
 .nav-item { position: relative; }
 .nav-item > a { display: inline-flex; }

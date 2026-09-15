@@ -51,9 +51,8 @@ function calculatorUrl(occupation, record) {
   params.set("occupation", occupation.id);
   if (record.wage.unit === "EUR_HOUR") params.set("hourly_wage", String(record.wage.amount));
   if (record.agreement_id) params.set("agreement", record.agreement_id);
-  if (record.classification && record.classification.grade) {
-    params.set("classification", record.classification.grade);
-  }
+  const label = classificationLabel(record.classification);
+  if (label) params.set("classification", label);
   return `calculator.html?${params.toString()}`;
 }
 
@@ -63,30 +62,84 @@ function occupationUrl(occupation) {
 
 function classificationLabel(classification) {
   if (!classification) return "";
+  const parts = [];
   if (classification.grade && classification.points) {
-    return `${classification.grade} · ${classification.points} points`;
+    parts.push(`${classification.grade} · ${classification.points} points`);
+  } else if (classification.grade) {
+    parts.push(classification.grade);
   }
-  return classification.grade || classification.pay_group || "";
+  if (classification.experience && !String(classification.grade || "").includes(classification.experience)) {
+    parts.push(classification.experience);
+  } else if (classification.experience_level && !classification.experience) {
+    const experienceLabels = {
+      "0-2": "0–2 years",
+      "over-2": "over 2 years",
+      "over-5": "over 5 years",
+      "over-10": "over 10 years",
+      "0y": "0 years",
+      "5y": "5 years",
+      "8y": "8 years",
+      "11y": "11 years",
+      "2nd-year": "2nd year",
+      "4th-year": "4th year",
+      "6th-year": "6th year",
+      "9th-year": "9th year",
+      trainee: "Trainee",
+    };
+    parts.push(experienceLabels[classification.experience_level] || classification.experience_level);
+  }
+  if (classification.seniority && classification.seniority !== classification.experience_level) {
+    const seniorityLabels = {
+      "2nd-year": "2nd year",
+      "4th-year": "4th year",
+      "6th-year": "6th year",
+      "9th-year": "9th year",
+      trainee: "Trainee",
+    };
+    parts.push(seniorityLabels[classification.seniority] || classification.seniority);
+  }
+  if (classification.region === "pks") parts.push("Helsinki, Espoo, Kauniainen or Vantaa");
+  if (classification.region === "other-finland") parts.push("Other Finland");
+  return [...new Set(parts.filter(Boolean))].join(" · ");
 }
 
-function renderPreparingState(container, occupationName, loadFailed = false) {
+function recordNotices(record, dataset) {
+  const notices = [];
+  if (Array.isArray(record.notices)) notices.push(...record.notices);
+  const agreement = engine.getAgreement(dataset, record.agreement_id);
+  if (agreement && Array.isArray(agreement.notices)) notices.push(...agreement.notices);
+  return [...new Set(notices)];
+}
+
+function renderPreparingState(container, occupation, loadFailed = false, result = null) {
   container.replaceChildren();
   const state = document.createElement("div");
   state.className = "empty-state";
+  const preparing = (result && result.preparing) || (occupation && occupation.preparing) || {};
+  const name = (occupation && occupation.name) || (typeof occupation === "string" ? occupation : "Occupation");
   addText(
     state,
     "h3",
-    loadFailed ? "Wage data is temporarily unavailable" : `${occupationName || "Occupation"} wage information is being prepared`
+    loadFailed
+      ? "Wage data is temporarily unavailable"
+      : preparing.title || `${name} wage information is being prepared`
   );
   addText(
     state,
     "p",
     loadFailed
       ? "The wage dataset could not be loaded. Please try again later."
-      : "We haven't yet published verified wage information for this occupation. Labour Finland publishes wage figures only after checking the source and validity period."
+      : preparing.body ||
+        "We haven't yet published verified wage information for this occupation. Labour Finland publishes wage figures only after checking the source and validity period."
   );
   const links = document.createElement("div");
   links.className = "empty-state__links";
+  if (preparing.source_url) {
+    const source = addText(links, "a", preparing.source_name || "View original source");
+    source.href = preparing.source_url;
+    source.target = "_blank";
+    source.rel = "noopener noreferrer";
+  }
   const method = addText(links, "a", "View methodology");
   method.href = "methodology.html";
   state.append(links);
@@ -155,11 +208,16 @@ function renderResult(container, occupation, record, dataset) {
   const agreement = engine.getAgreement(dataset, record.agreement_id);
   const details = document.createElement("div");
   details.className = "result-list wage-result__details";
-  appendDetail(details, "Job grade", classificationLabel(record.classification));
+  appendDetail(details, "Classification", classificationLabel(record.classification));
   appendDetail(details, "Collective agreement", agreement && (agreement.short_name || agreement.name));
+  appendDetail(details, "Source", record.source_name);
   appendDetail(details, "Effective from", engine.formatDate(record.effective_from));
   appendDetail(details, "Last checked", engine.formatDate(record.last_verified));
   if (details.childElementCount) article.append(details);
+
+  recordNotices(record, dataset).forEach((notice) => {
+    addText(article, "p", notice, "notice");
+  });
 
   const meaning = document.createElement("section");
   meaning.className = "wage-meaning";
@@ -201,7 +259,7 @@ function renderWageTable(container, occupation, records, dataset, onBack) {
   addText(
     article,
     "p",
-    "Labour Finland does not choose a job grade for you. Check your employment information, employer or the relevant organisation, then select a grade if you know it."
+    "Labour Finland does not choose a classification for you. Check your employment information, employer or the relevant organisation, then select a group if you know it."
   );
 
   const sample = records[0];
@@ -216,6 +274,9 @@ function renderWageTable(container, occupation, records, dataset, onBack) {
       `Effective from ${engine.formatDate(sample.effective_from)}${sample.last_verified ? `. Last checked ${engine.formatDate(sample.last_verified)}` : ""}.`,
       "muted"
     );
+    recordNotices(sample, dataset).forEach((notice) => {
+      addText(article, "p", notice, "notice");
+    });
   }
 
   const sorted = records.slice().sort((a, b) => a.wage.amount - b.wage.amount);
@@ -286,7 +347,7 @@ function renderWageTable(container, occupation, records, dataset, onBack) {
 function renderQuestion(container, occupation, question, onSelect, onBack, canGoBack) {
   container.replaceChildren();
   container.hidden = false;
-  addText(container, "p", "A few details can affect the applicable wage.", "muted");
+  addText(container, "p", question.lead || "A few details can affect the applicable wage.", "muted");
   addText(container, "h3", question.prompt);
   const options = document.createElement("div");
   options.className = "choice-list";
@@ -337,6 +398,45 @@ function renderOccupationChoice(container, matches, onSelect) {
 function hideQuestionFlow(container) {
   container.hidden = true;
   container.replaceChildren();
+}
+
+const DIRECTORY_GROUPS = [
+  ["cleaning-property", "Cleaning & property services"],
+  ["hospitality-restaurants", "Hospitality & restaurants"],
+  ["retail-commerce", "Retail & commerce"],
+  ["logistics", "Logistics"],
+  ["construction", "Construction"],
+  ["health-social-care", "Health & social care"],
+  ["security", "Security"],
+  ["office-administration", "Office & administration"],
+  ["it-technology", "IT & technology"],
+];
+
+function renderOccupationDirectory(container, dataset, onSelect) {
+  container.replaceChildren();
+  DIRECTORY_GROUPS.forEach(([groupId, title]) => {
+    const occupations = dataset.occupations.filter(
+      (occupation) => occupation.status === "ACTIVE" && occupation.directory_group === groupId
+    );
+    if (!occupations.length) return;
+    const section = document.createElement("section");
+    section.className = "directory-group";
+    addText(section, "h3", title);
+    const list = document.createElement("div");
+    list.className = "directory-list";
+    occupations.forEach((occupation) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "directory-card";
+      addText(button, "strong", occupation.name);
+      const status = engine.occupationLookupStatus(dataset, occupation);
+      addText(button, "span", engine.lookupStatusLabel(status), "directory-status");
+      button.addEventListener("click", () => onSelect(occupation));
+      list.append(button);
+    });
+    section.append(list);
+    container.append(section);
+  });
 }
 
 function bindAutocomplete(input, list, occupations, onChoose) {
@@ -463,7 +563,7 @@ async function initializeWageLookup() {
         renderResolved();
       });
     } else {
-      renderPreparingState(output, state.occupation.name);
+      renderPreparingState(output, state.occupation, false, result);
     }
     output.focus();
   };
@@ -519,6 +619,9 @@ async function initializeWageLookup() {
     });
     popularSection.hidden = false;
   }
+
+  const directory = document.querySelector("[data-occupation-directory]");
+  if (directory) renderOccupationDirectory(directory, dataset, startOccupation);
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();

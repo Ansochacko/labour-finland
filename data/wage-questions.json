@@ -21,6 +21,181 @@
         { "value": "grade-10", "label": "Grade 10 (59–69 points)" },
         { "value": "__table__", "label": "I'm not sure yet", "action": "SHOW_TABLE" }
       ]
+    },
+    {
+      "id": "hospitality-pay-group",
+      "type": "single_choice",
+      "answer_key": "pay_group",
+      "lead": "Your wage depends on your pay group and experience.",
+      "prompt": "Do you know your pay group?",
+      "why": "The Hotel, Restaurant and Leisure Industry agreement uses pay groups. A job title such as restaurant worker or cook does not identify the pay group. Labour Finland does not choose one for you.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" },
+        { "value": "5", "label": "5" },
+        { "value": "__table__", "label": "I'm not sure", "action": "SHOW_TABLE" }
+      ]
+    },
+    {
+      "id": "hospitality-experience",
+      "type": "single_choice",
+      "answer_key": "experience_level",
+      "prompt": "Which experience stage applies?",
+      "why": "The same pay group has different wage-scale amounts by experience stage. Check your employment information if you are unsure.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "0-2", "label": "0–2 years" },
+        { "value": "over-2", "label": "over 2 years" },
+        { "value": "over-5", "label": "over 5 years" },
+        { "value": "over-10", "label": "over 10 years" },
+        { "value": "__table__", "label": "I'm not sure", "action": "SHOW_TABLE" }
+      ]
+    },
+    {
+      "id": "commerce-region",
+      "type": "single_choice",
+      "answer_key": "region",
+      "prompt": "Where is the workplace?",
+      "why": "The current commerce employee table distinguishes the Helsinki metropolitan area from the rest of Finland.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "pks", "label": "Helsinki, Espoo, Kauniainen or Vantaa" },
+        { "value": "other-finland", "label": "Other Finland" }
+      ]
+    },
+    {
+      "id": "commerce-group",
+      "type": "single_choice",
+      "answer_key": "pay_group",
+      "prompt": "Do you know your wage group?",
+      "why": "Commerce pay groups are a classification in the agreement. A job title such as retail salesperson does not identify the group. Labour Finland does not guess it.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "A", "label": "A" },
+        { "value": "B", "label": "B" },
+        { "value": "C", "label": "C" },
+        { "value": "D", "label": "D" },
+        { "value": "__table__", "label": "I'm not sure", "action": "SHOW_TABLE" }
+      ]
+    },
+    {
+      "id": "commerce-seniority",
+      "type": "single_choice",
+      "answer_key": "seniority",
+      "prompt": "Which seniority stage applies?",
+      "why": "The current table uses seniority stages. A trainee amount is only used if you explicitly select trainee and the agreement's trainee conditions apply.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "2nd-year", "label": "2nd year" },
+        { "value": "4th-year", "label": "4th year" },
+        { "value": "6th-year", "label": "6th year" },
+        { "value": "9th-year", "label": "9th year" },
+        { "value": "trainee", "label": "Trainee (only if trainee conditions apply)", "always_include": true, "derive": true },
+        { "value": "__table__", "label": "I'm not sure", "action": "SHOW_TABLE" }
+      ]
+    },
+    {
+      "id": "warehouse-sector",
+      "type": "single_choice",
+      "answer_key": "sector",
+      "ask_when": "ALWAYS",
+      "lead": "We need one more detail to find the right wage information.",
+      "prompt": "Which sector does this warehouse or logistics work belong to?",
+      "why": "Not every warehouse job is covered by the commerce-sector agreement. Labour Finland only uses that table if commerce logistics is selected.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "commerce-logistics", "label": "Commerce logistics" },
+        { "value": "other", "label": "Another sector / I'm not sure", "always_include": true }
+      ]
+    },
+    {
+      "id": "construction-sector",
+      "type": "single_choice",
+      "answer_key": "sector",
+      "ask_when": "NO_NUMERIC_RECORDS",
+      "lead": "Construction wages depend on the applicable construction sector and classification.",
+      "prompt": "Which construction sector is closest to the work?",
+      "why": "Construction-industry agreements are published by sector. Labour Finland does not treat construction worker as one wage.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "building-construction", "label": "Building construction" },
+        { "value": "asphalting", "label": "Asphalting" },
+        { "value": "waterproofing", "label": "Waterproofing" },
+        { "value": "painting", "label": "Painting" },
+        { "value": "infrastructure", "label": "Infrastructure" },
+        { "value": "flooring", "label": "Flooring" },
+        { "value": "construction-product-industry", "label": "Construction product industry" },
+        { "value": "building-services", "label": "Building services" }
+      ]
+    },
+    {
+      "id": "care-sector",
+      "type": "single_choice",
+      "answer_key": "sector",
+      "ask_when": "ALWAYS",
+      "prompt": "Which sector does this care work belong to?",
+      "why": "Practical nurses can work under different agreements. A job title does not identify the sector.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "private-social-services", "label": "Private social services" },
+        { "value": "public-health-social-care", "label": "Public health or social care", "always_include": true },
+        { "value": "other", "label": "Another sector / I'm not sure", "always_include": true }
+      ]
+    },
+    {
+      "id": "care-region",
+      "type": "single_choice",
+      "answer_key": "region",
+      "ask_when": "ALWAYS",
+      "prompt": "Where is the workplace?",
+      "why": "The currently published private social services table is for Other Finland. It is not used for the capital region.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "other-finland", "label": "Other Finland" },
+        { "value": "capital-region", "label": "Helsinki, Espoo, Kauniainen or Vantaa", "always_include": true }
+      ]
+    },
+    {
+      "id": "social-pay-class",
+      "type": "single_choice",
+      "answer_key": "pay_class",
+      "prompt": "Do you know the pay class?",
+      "why": "The private social services table uses pay groups and pay classes. Practical nurse is not mapped automatically to one class.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "g16a", "label": "A / G16A" },
+        { "value": "g18b", "label": "B / G18B" },
+        { "value": "g20c", "label": "C / G20C" },
+        { "value": "g21", "label": "C / G21" },
+        { "value": "g22", "label": "C / G22" },
+        { "value": "g24d", "label": "D / G24D" },
+        { "value": "g25e", "label": "E / G25E" },
+        { "value": "g26", "label": "E / G26" },
+        { "value": "g27", "label": "E / G27" },
+        { "value": "g28f", "label": "F / G28F" },
+        { "value": "g29", "label": "F / G29" },
+        { "value": "g30", "label": "F / G30" },
+        { "value": "g31", "label": "F / G31" },
+        { "value": "g32", "label": "F / G32" },
+        { "value": "__table__", "label": "I'm not sure", "action": "SHOW_TABLE" }
+      ]
+    },
+    {
+      "id": "social-experience",
+      "type": "single_choice",
+      "answer_key": "experience_level",
+      "prompt": "Which experience stage applies?",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "0y", "label": "0 years" },
+        { "value": "5y", "label": "5 years" },
+        { "value": "8y", "label": "8 years" },
+        { "value": "11y", "label": "11 years" },
+        { "value": "__table__", "label": "I'm not sure", "action": "SHOW_TABLE" }
+      ]
     }
   ],
   "supported_question_types": [
@@ -32,5 +207,5 @@
     "pay_group",
     "qualification"
   ],
-  "publication_rule": "A question may be shown only when it is required to distinguish currently valid VERIFIED wage records. Do not invent pay groups, job types or other classifications."
+  "publication_rule": "A question may be shown only when it is required to distinguish currently valid VERIFIED wage records, or as guidance when no numeric table exists. Do not invent pay groups, job types or other classifications."
 }

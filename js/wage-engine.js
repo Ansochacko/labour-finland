@@ -125,6 +125,11 @@
       if (!record || !record.id) errors.push("has no ID");
       if (record && duplicateRecordIds.has(record.id)) errors.push("does not have a unique ID");
       if (!record || !occupationIds.has(record.occupation_id)) errors.push("has an invalid occupation reference");
+      if (record && Array.isArray(record.occupation_ids)) {
+        record.occupation_ids.forEach((id) => {
+          if (!occupationIds.has(id)) errors.push(`references unknown occupation "${id}"`);
+        });
+      }
       if (record && record.agreement_id && !agreementIds.has(record.agreement_id)) {
         errors.push("has an invalid agreement reference");
       }
@@ -279,12 +284,28 @@
     );
   }
 
+  function occupationIdsOf(item) {
+    const ids = [];
+    if (item && item.occupation_id) ids.push(item.occupation_id);
+    if (item && Array.isArray(item.occupation_ids)) ids.push(...item.occupation_ids);
+    return [...new Set(ids.filter(Boolean))];
+  }
+
+  function recordAppliesToOccupation(record, occupationId) {
+    return occupationIdsOf(record).includes(occupationId);
+  }
+
+  function occupationOverlap(a, b) {
+    const left = new Set(occupationIdsOf(a));
+    return occupationIdsOf(b).some((id) => left.has(id));
+  }
+
   function eligibleWageRecords(dataset, occupationId, today = todayLocalISO()) {
     const validation = dataset.validation || validateDataset(dataset);
     return (dataset.wageRecords || []).filter(
       (record) =>
         validation.validRecordIds.has(record.id) &&
-        record.occupation_id === occupationId &&
+        recordAppliesToOccupation(record, occupationId) &&
         record.verification_status === VERIFIED &&
         record.wage &&
         Number.isFinite(record.wage.amount) &&
@@ -294,7 +315,32 @@
 
   function matchesAnswers(record, answers) {
     const classification = record.classification || {};
-    return Object.entries(answers).every(([key, value]) => normalize(classification[key]) === normalize(value));
+    return Object.entries(answers).every(([key, value]) => {
+      if (value === "__table__") return true;
+      return normalize(classification[key]) === normalize(value);
+    });
+  }
+
+  function extraQuestionOptions(question) {
+    return (question.options || []).filter(
+      (option) =>
+        option.always_include ||
+        option.derive ||
+        option.action === "SHOW_TABLE" ||
+        option.value === "__table__"
+    );
+  }
+
+  function getGuidanceQuestion(dataset, occupation, answers = {}) {
+    const questionsById = new Map((dataset.questions || []).map((question) => [question.id, question]));
+    for (const questionId of occupation.question_flow || []) {
+      const question = questionsById.get(questionId);
+      if (!question || question.verification_status !== VERIFIED) continue;
+      if (question.ask_when !== "NO_NUMERIC_RECORDS") continue;
+      if (answers[question.answer_key] != null) continue;
+      return { ...question, options: question.options || [] };
+    }
+    return null;
   }
 
   function getNextQuestion(dataset, occupation, answers = {}, today = todayLocalISO()) {
@@ -306,31 +352,120 @@
     for (const questionId of occupation.question_flow || []) {
       const question = questionsById.get(questionId);
       if (!question || question.verification_status !== VERIFIED || answers[question.answer_key] != null) continue;
+      if (question.ask_when === "NO_NUMERIC_RECORDS") continue;
+
       const relevantValues = new Set(
         candidates.map((record) => record.classification && record.classification[question.answer_key]).filter(Boolean)
       );
-      if (relevantValues.size <= 1) continue;
       const classifiedOptions = (question.options || []).filter((option) => relevantValues.has(option.value));
-      const tableOptions = (question.options || []).filter(
-        (option) => option.action === "SHOW_TABLE" || option.value === "__table__"
+      const extras = extraQuestionOptions(question).filter(
+        (option) => !classifiedOptions.some((classified) => classified.value === option.value)
       );
+
+      if (question.ask_when === "ALWAYS") {
+        if (!candidates.length && Object.keys(knownAnswers(answers)).length) continue;
+        const options = classifiedOptions.length ? classifiedOptions.concat(extras) : question.options || [];
+        return { ...question, options };
+      }
+
+      if (!relevantValues.size) continue;
+      if (relevantValues.size <= 1 && extras.filter((option) => option.always_include || option.derive).length === 0) {
+        continue;
+      }
       if (classifiedOptions.length !== relevantValues.size) return null;
-      return { ...question, options: classifiedOptions.concat(tableOptions) };
+      return { ...question, options: classifiedOptions.concat(extras) };
     }
     return null;
+  }
+
+  function roundMoney(value) {
+    return Math.round(value * 100) / 100;
+  }
+
+  function derivePercentRecord(base, percent, notes) {
+    const derived = JSON.parse(JSON.stringify(base));
+    derived.id = `${base.id}-derived-${percent}`;
+    derived.derived_from = base.id;
+    derived.derived_rule = `${percent}% of the referenced verified wage-scale amount`;
+    derived.classification = {
+      ...(base.classification || {}),
+      seniority: "trainee",
+      experience_level: "trainee",
+      grade: "Trainee",
+    };
+    derived.wage = {
+      ...base.wage,
+      amount: roundMoney(base.wage.amount * (percent / 100)),
+      monthly_amount:
+        base.wage.monthly_amount == null ? null : roundMoney(base.wage.monthly_amount * (percent / 100)),
+    };
+    derived.notes = notes;
+    return derived;
+  }
+
+  function knownAnswers(answers) {
+    return Object.fromEntries(Object.entries(answers).filter(([, value]) => value !== "__table__"));
   }
 
   function resolveWage(dataset, occupation, answers = {}, today = todayLocalISO()) {
     const eligible = eligibleWageRecords(dataset, occupation.id, today);
     if (Object.values(answers).includes("__table__")) {
-      return { status: "SHOW_TABLE", records: eligible };
+      const records = eligible.filter((record) => matchesAnswers(record, knownAnswers(answers)));
+      return { status: "SHOW_TABLE", records: records.length ? records : eligible };
     }
+
+    if (!eligible.length) {
+      const guidance = getGuidanceQuestion(dataset, occupation, answers);
+      if (guidance) return { status: "NEEDS_QUESTION", question: guidance, candidates: [] };
+      return { status: "NO_RESULT", preparing: occupation.preparing || null };
+    }
+
+    if (answers.seniority === "trainee") {
+      const baseAnswers = { ...answers, seniority: "2nd-year" };
+      const base = eligible.filter((record) => matchesAnswers(record, baseAnswers));
+      if (base.length === 1) {
+        return {
+          status: "RESOLVED",
+          record: derivePercentRecord(
+            base[0],
+            85,
+            "This trainee amount is 85% of the verified second-year wage in the same job-requirement group, used only when the collective-agreement trainee conditions apply. Labour Finland does not decide whether those conditions apply."
+          ),
+        };
+      }
+    }
+
     const candidates = eligible.filter((record) => matchesAnswers(record, answers));
     const nextQuestion = getNextQuestion(dataset, occupation, answers, today);
     if (nextQuestion) return { status: "NEEDS_QUESTION", question: nextQuestion, candidates };
     if (candidates.length === 1) return { status: "RESOLVED", record: candidates[0] };
     if (candidates.length > 1) return { status: "SHOW_TABLE", records: candidates };
-    return { status: "NO_RESULT" };
+    return { status: "NO_RESULT", preparing: occupation.preparing || null };
+  }
+
+  function occupationLookupStatus(dataset, occupation, today = todayLocalISO()) {
+    const eligible = eligibleWageRecords(dataset, occupation.id, today);
+    const questionsById = new Map((dataset.questions || []).map((question) => [question.id, question]));
+    const hasGuidance = (occupation.question_flow || []).some((questionId) => {
+      const question = questionsById.get(questionId);
+      return question && question.ask_when === "NO_NUMERIC_RECORDS";
+    });
+    if (eligible.length > 0) {
+      if ((occupation.question_flow || []).length) return "CLASSIFICATION_REQUIRED";
+      return "VERIFIED_RESULT_AVAILABLE";
+    }
+    if (hasGuidance) return "SECTOR_REQUIRED";
+    return "PREPARING";
+  }
+
+  function lookupStatusLabel(status) {
+    return {
+      VERIFIED_RESULT_AVAILABLE: "Verified wage available",
+      CLASSIFICATION_REQUIRED: "Needs job details",
+      VERIFIED_TABLE_AVAILABLE_BUT_MAPPING_REQUIRED: "Needs job details",
+      SECTOR_REQUIRED: "Needs job details",
+      PREPARING: "Being verified",
+    }[status] || "Being verified";
   }
 
   function prepareDataset(raw) {
@@ -356,8 +491,8 @@
       (supplement) =>
         validation.validSupplementIds.has(supplement.id) &&
         supplement.verification_status === VERIFIED &&
-        supplement.occupation_id === wageRecord.occupation_id &&
-        (!supplement.agreement_id || supplement.agreement_id === wageRecord.agreement_id) &&
+        occupationOverlap(supplement, wageRecord) &&
+        (!supplement.agreement_id || !wageRecord.agreement_id || supplement.agreement_id === wageRecord.agreement_id) &&
         isCurrent(supplement, today)
     );
   }
@@ -383,6 +518,8 @@
     eligibleWageRecords,
     getNextQuestion,
     resolveWage,
+    occupationLookupStatus,
+    lookupStatusLabel,
     getAgreement,
     getApplicableSupplements,
     prepareDataset,

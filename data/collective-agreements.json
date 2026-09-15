@@ -12,6 +12,61 @@
       "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
       "last_verified": "2026-09-15",
       "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hotel-restaurant-leisure-2025-2028",
+      "name": "Collective Agreement for the Hotel, Restaurant and Leisure Industry",
+      "short_name": "Hotel, Restaurant and Leisure Industry",
+      "sector": "hotel-restaurant-leisure",
+      "parties": ["Service Union United PAM", "Finnish Hospitality Association MaRa"],
+      "valid_from": "2025-04-01",
+      "valid_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/en/tes/collective-agreement-hotel-restaurant-leisure/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED",
+      "notes": "The third agreement year may be terminable according to the agreement. Labour Finland does not treat that as a separate wage table unless a dated record exists."
+    },
+    {
+      "id": "commerce-sector",
+      "name": "Collective Agreement for the Commerce Sector",
+      "short_name": "Commerce sector",
+      "sector": "commerce",
+      "parties": ["Service Union United PAM", "Finnish Commerce Federation"],
+      "valid_from": null,
+      "valid_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/en/tes/commerce-sector-collective-agreement/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ]
+    },
+    {
+      "id": "construction-industry-2025-2028",
+      "name": "Construction-industry collective agreements",
+      "short_name": "Construction industry",
+      "sector": "construction",
+      "valid_from": "2025-03-01",
+      "valid_until": "2028-02-29",
+      "source_name": "Finnish Construction Trade Union",
+      "source_url": "https://rakennusliitto.fi/en/wages-and-working-conditions/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED",
+      "notes": "This entry identifies the reported agreement period and source. It does not publish a numeric wage table."
+    },
+    {
+      "id": "private-social-services",
+      "name": "Private social services collective agreement",
+      "short_name": "Private social services",
+      "sector": "private-social-services",
+      "valid_from": null,
+      "valid_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
     }
   ],
   "allowed_verification_statuses": [

@@ -68,6 +68,60 @@
       "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
       "last_verified": "2026-09-15",
       "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-evening-2025",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "name": "Evening supplement",
+      "category": "EVENING",
+      "amount": 1.4,
+      "calculation_rule": null,
+      "unit": "EUR_HOUR",
+      "conditions": "May apply where the agreement's evening-work conditions are met. It is not added automatically to the wage-scale amount.",
+      "effective_from": "2025-09-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/en/tes/collective-agreement-hotel-restaurant-leisure/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-night-2025",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "name": "Night supplement",
+      "category": "NIGHT",
+      "amount": 2.37,
+      "calculation_rule": null,
+      "unit": "EUR_HOUR",
+      "conditions": "May apply where the agreement's night-work conditions are met. It is not added automatically to the wage-scale amount.",
+      "effective_from": "2025-09-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/en/tes/collective-agreement-hotel-restaurant-leisure/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
     }
   ],
   "supported_categories": [

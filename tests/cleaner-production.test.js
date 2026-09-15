@@ -66,8 +66,8 @@ const nextTable = engine.resolveWage(dataset, cleaner, { pay_group: "grade-3" },
 assert(nextTable.status === "RESOLVED" && nextTable.record.wage.amount === 13.54, "2027 table should apply on its effective date.");
 
 const restaurant = engine.findOccupation(dataset.occupations, "restaurant worker");
-const preparing = engine.resolveWage(dataset, restaurant, {}, today);
-assert(preparing.status === "NO_RESULT", "Restaurant worker must stay in the preparing state.");
+const restaurantAsked = engine.resolveWage(dataset, restaurant, {}, today);
+assert(restaurantAsked.status === "NEEDS_QUESTION", "Restaurant worker should ask for a pay group.");
 
 const fixtures = require("fs").existsSync(path.join(__dirname, "wage-engine.test.js"));
 assert(fixtures, "Isolated fixture tests must remain separate from production data.");

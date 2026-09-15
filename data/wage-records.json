@@ -1,5 +1,9 @@
 {
   "schema_version": 1,
+  "field_notes": {
+    "occupation_ids": "Optional extra occupation IDs that share the same verified table. Do not use this to guess a classification.",
+    "notices": "Optional user-facing dated notices. Do not treat a notice as a wage figure."
+  },
   "wage_records": [
     {
       "id": "ps-cleaner-2026-08-trainee",
@@ -540,28 +544,4798 @@
       "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
       "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
       "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g1-0-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "1",
+        "experience_level": "0-2",
+        "grade": "Pay group 1",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "0–2 years"
+      },
+      "wage": {
+        "amount": 11.97,
+        "monthly_amount": 1903,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 1, 0–2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g1-over-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "1",
+        "experience_level": "over-2",
+        "grade": "Pay group 1",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 2 years"
+      },
+      "wage": {
+        "amount": 12.28,
+        "monthly_amount": 1953,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 1, over 2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g1-over-5",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "1",
+        "experience_level": "over-5",
+        "grade": "Pay group 1",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 5 years"
+      },
+      "wage": {
+        "amount": 12.58,
+        "monthly_amount": 2001,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 1, over 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g1-over-10",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "1",
+        "experience_level": "over-10",
+        "grade": "Pay group 1",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 10 years"
+      },
+      "wage": {
+        "amount": 12.91,
+        "monthly_amount": 2053,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 1, over 10 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g2-0-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "2",
+        "experience_level": "0-2",
+        "grade": "Pay group 2",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "0–2 years"
+      },
+      "wage": {
+        "amount": 12.21,
+        "monthly_amount": 1942,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 2, 0–2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g2-over-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "2",
+        "experience_level": "over-2",
+        "grade": "Pay group 2",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 2 years"
+      },
+      "wage": {
+        "amount": 12.51,
+        "monthly_amount": 1989,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 2, over 2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g2-over-5",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "2",
+        "experience_level": "over-5",
+        "grade": "Pay group 2",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 5 years"
+      },
+      "wage": {
+        "amount": 12.97,
+        "monthly_amount": 2062,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 2, over 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g2-over-10",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "2",
+        "experience_level": "over-10",
+        "grade": "Pay group 2",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 10 years"
+      },
+      "wage": {
+        "amount": 13.58,
+        "monthly_amount": 2160,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 2, over 10 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g3-0-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "3",
+        "experience_level": "0-2",
+        "grade": "Pay group 3",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "0–2 years"
+      },
+      "wage": {
+        "amount": 12.97,
+        "monthly_amount": 2063,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 3, 0–2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g3-over-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "3",
+        "experience_level": "over-2",
+        "grade": "Pay group 3",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 2 years"
+      },
+      "wage": {
+        "amount": 13.36,
+        "monthly_amount": 2124,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 3, over 2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g3-over-5",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "3",
+        "experience_level": "over-5",
+        "grade": "Pay group 3",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 5 years"
+      },
+      "wage": {
+        "amount": 13.74,
+        "monthly_amount": 2184,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 3, over 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g3-over-10",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "3",
+        "experience_level": "over-10",
+        "grade": "Pay group 3",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 10 years"
+      },
+      "wage": {
+        "amount": 14.33,
+        "monthly_amount": 2279,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 3, over 10 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g4-0-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "4",
+        "experience_level": "0-2",
+        "grade": "Pay group 4",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "0–2 years"
+      },
+      "wage": {
+        "amount": 13.7,
+        "monthly_amount": 2179,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 4, 0–2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g4-over-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "4",
+        "experience_level": "over-2",
+        "grade": "Pay group 4",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 2 years"
+      },
+      "wage": {
+        "amount": 14.08,
+        "monthly_amount": 2239,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 4, over 2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g4-over-5",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "4",
+        "experience_level": "over-5",
+        "grade": "Pay group 4",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 5 years"
+      },
+      "wage": {
+        "amount": 14.51,
+        "monthly_amount": 2307,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 4, over 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g4-over-10",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "4",
+        "experience_level": "over-10",
+        "grade": "Pay group 4",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 10 years"
+      },
+      "wage": {
+        "amount": 15.04,
+        "monthly_amount": 2392,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 4, over 10 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g5-0-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "5",
+        "experience_level": "0-2",
+        "grade": "Pay group 5",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "0–2 years"
+      },
+      "wage": {
+        "amount": 14.31,
+        "monthly_amount": 2275,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 5, 0–2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g5-over-2",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "5",
+        "experience_level": "over-2",
+        "grade": "Pay group 5",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 2 years"
+      },
+      "wage": {
+        "amount": 14.63,
+        "monthly_amount": 2326,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 5, over 2 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g5-over-5",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "5",
+        "experience_level": "over-5",
+        "grade": "Pay group 5",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 5 years"
+      },
+      "wage": {
+        "amount": 14.99,
+        "monthly_amount": 2384,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 5, over 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "hrl-2026-06-g5-over-10",
+      "occupation_id": "restaurant-worker",
+      "occupation_ids": [
+        "restaurant-worker",
+        "waiter",
+        "waitress",
+        "cook",
+        "chef",
+        "kitchen-worker",
+        "hotel-worker",
+        "hospitality-worker"
+      ],
+      "agreement_id": "hotel-restaurant-leisure-2025-2028",
+      "classification": {
+        "pay_group": "5",
+        "experience_level": "over-10",
+        "grade": "Pay group 5",
+        "points": null,
+        "job_type": "employee",
+        "region": null,
+        "experience": "over 10 years"
+      },
+      "wage": {
+        "amount": 15.43,
+        "monthly_amount": 2453,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-06-01",
+      "effective_until": null,
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/04/marava_palkat_tyontekijat_01062026.pdf",
+      "notes": "This is the wage-scale amount for the selected pay group and experience stage under the Hotel, Restaurant and Leisure Industry collective agreement. Your actual pay may be higher. A job title does not identify the pay group.",
+      "conditions": "Pay group 5, over 10 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gA-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "2nd-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 12.88,
+        "monthly_amount": 2061,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gA-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "4th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 13.34,
+        "monthly_amount": 2135,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gA-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "6th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 14.06,
+        "monthly_amount": 2250,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gA-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "9th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 14.74,
+        "monthly_amount": 2359,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gB-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "2nd-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 13.66,
+        "monthly_amount": 2185,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gB-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "4th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 14.17,
+        "monthly_amount": 2267,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gB-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "6th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 14.97,
+        "monthly_amount": 2395,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gB-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "9th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 15.64,
+        "monthly_amount": 2502,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gC-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "2nd-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 14.59,
+        "monthly_amount": 2334,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gC-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "4th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 15.11,
+        "monthly_amount": 2418,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gC-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "6th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 16.13,
+        "monthly_amount": 2580,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gC-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "9th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 16.9,
+        "monthly_amount": 2704,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gD-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "2nd-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 15.36,
+        "monthly_amount": 2458,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gD-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "4th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 15.94,
+        "monthly_amount": 2550,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gD-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "6th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 17.01,
+        "monthly_amount": 2721,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-pks-gD-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "9th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 18.3,
+        "monthly_amount": 2928,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gA-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "2nd-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 12.37,
+        "monthly_amount": 1979,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gA-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "4th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 12.81,
+        "monthly_amount": 2049,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gA-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "6th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 13.46,
+        "monthly_amount": 2154,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gA-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "9th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 14.08,
+        "monthly_amount": 2252,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gB-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "2nd-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 13.13,
+        "monthly_amount": 2101,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gB-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "4th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 13.63,
+        "monthly_amount": 2180,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gB-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "6th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 14.31,
+        "monthly_amount": 2290,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gB-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "9th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 14.93,
+        "monthly_amount": 2389,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gC-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "2nd-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 13.96,
+        "monthly_amount": 2233,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gC-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "4th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 14.46,
+        "monthly_amount": 2314,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gC-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "6th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 15.37,
+        "monthly_amount": 2459,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gC-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "9th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 16.08,
+        "monthly_amount": 2572,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gD-2nd-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "2nd-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 14.71,
+        "monthly_amount": 2354,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gD-4th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "4th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 15.41,
+        "monthly_amount": 2465,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gD-6th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "6th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 16.19,
+        "monthly_amount": 2591,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "com-2026-08-other-finland-gD-9th-year",
+      "occupation_id": "retail-salesperson",
+      "occupation_ids": [
+        "retail-salesperson"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "9th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 17.34,
+        "monthly_amount": 2775,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gA-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "2nd-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 12.88,
+        "monthly_amount": 2061,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gA-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "4th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 13.34,
+        "monthly_amount": 2135,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gA-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "6th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 14.06,
+        "monthly_amount": 2250,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gA-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "A",
+        "seniority": "9th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 14.74,
+        "monthly_amount": 2359,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group A, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gB-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "2nd-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 13.66,
+        "monthly_amount": 2185,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gB-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "4th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 14.17,
+        "monthly_amount": 2267,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gB-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "6th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 14.97,
+        "monthly_amount": 2395,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gB-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "B",
+        "seniority": "9th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 15.64,
+        "monthly_amount": 2502,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group B, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gC-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "2nd-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 14.59,
+        "monthly_amount": 2334,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gC-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "4th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 15.11,
+        "monthly_amount": 2418,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gC-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "6th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 16.13,
+        "monthly_amount": 2580,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gC-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "C",
+        "seniority": "9th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 16.9,
+        "monthly_amount": 2704,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group C, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gD-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "2nd-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 15.36,
+        "monthly_amount": 2458,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gD-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "4th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 15.94,
+        "monthly_amount": 2550,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gD-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "6th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 17.01,
+        "monthly_amount": 2721,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-pks-gD-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "pks",
+        "pay_group": "D",
+        "seniority": "9th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 18.3,
+        "monthly_amount": 2928,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Helsinki, Espoo, Kauniainen or Vantaa, Group D, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gA-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "2nd-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 12.37,
+        "monthly_amount": 1979,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gA-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "4th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 12.81,
+        "monthly_amount": 2049,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gA-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "6th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 13.46,
+        "monthly_amount": 2154,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gA-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "A",
+        "seniority": "9th-year",
+        "grade": "Group A",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 14.08,
+        "monthly_amount": 2252,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group A, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gB-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "2nd-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 13.13,
+        "monthly_amount": 2101,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gB-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "4th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 13.63,
+        "monthly_amount": 2180,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gB-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "6th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 14.31,
+        "monthly_amount": 2290,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gB-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "B",
+        "seniority": "9th-year",
+        "grade": "Group B",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 14.93,
+        "monthly_amount": 2389,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group B, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gC-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "2nd-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 13.96,
+        "monthly_amount": 2233,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gC-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "4th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 14.46,
+        "monthly_amount": 2314,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gC-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "6th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 15.37,
+        "monthly_amount": 2459,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gC-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "C",
+        "seniority": "9th-year",
+        "grade": "Group C",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 16.08,
+        "monthly_amount": 2572,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group C, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gD-2nd-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "2nd-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "2nd-year"
+      },
+      "wage": {
+        "amount": 14.71,
+        "monthly_amount": 2354,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 2nd year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gD-4th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "4th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "4th-year"
+      },
+      "wage": {
+        "amount": 15.41,
+        "monthly_amount": 2465,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 4th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gD-6th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "6th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "6th-year"
+      },
+      "wage": {
+        "amount": 16.19,
+        "monthly_amount": 2591,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 6th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "comlog-2026-08-other-finland-gD-9th-year",
+      "occupation_id": "warehouse-worker",
+      "occupation_ids": [
+        "warehouse-worker",
+        "logistics-worker"
+      ],
+      "agreement_id": "commerce-sector",
+      "classification": {
+        "sector": "commerce-logistics",
+        "region": "other-finland",
+        "pay_group": "D",
+        "seniority": "9th-year",
+        "grade": "Group D",
+        "points": null,
+        "job_type": "employee",
+        "experience_level": "9th-year"
+      },
+      "wage": {
+        "amount": 17.34,
+        "monthly_amount": 2775,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2026-09-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/wp-content/uploads/2025/03/Kaupan-alan-taulukkopalkat-1.8.2026-30.4.2027-1.pdf",
+      "notes": "This is the wage-scale amount for the selected region, wage group and seniority stage under the commerce-sector employee table effective 1 August 2026. A job title does not identify the wage group. The commerce-sector pay system changes from 1 October 2026.",
+      "conditions": "Other Finland, Group D, 9th year.",
+      "notices": [
+        "The commerce-sector pay system changes from 1 October 2026. Labour Finland uses effective dates to distinguish current and future wage information."
+      ],
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g16a-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "A",
+        "pay_class": "g16a",
+        "experience_level": "0y",
+        "grade": "A / G16A",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 13.2,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, A / G16A, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g16a-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "A",
+        "pay_class": "g16a",
+        "experience_level": "5y",
+        "grade": "A / G16A",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 13.64,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, A / G16A, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g16a-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "A",
+        "pay_class": "g16a",
+        "experience_level": "8y",
+        "grade": "A / G16A",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 14.07,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, A / G16A, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g16a-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "A",
+        "pay_class": "g16a",
+        "experience_level": "11y",
+        "grade": "A / G16A",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 14.51,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, A / G16A, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g18b-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "B",
+        "pay_class": "g18b",
+        "experience_level": "0y",
+        "grade": "B / G18B",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 13.98,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, B / G18B, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g18b-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "B",
+        "pay_class": "g18b",
+        "experience_level": "5y",
+        "grade": "B / G18B",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 14.43,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, B / G18B, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g18b-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "B",
+        "pay_class": "g18b",
+        "experience_level": "8y",
+        "grade": "B / G18B",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 14.9,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, B / G18B, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g18b-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "B",
+        "pay_class": "g18b",
+        "experience_level": "11y",
+        "grade": "B / G18B",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 15.4,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, B / G18B, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g20c-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g20c",
+        "experience_level": "0y",
+        "grade": "C / G20C",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 15.29,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G20C, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g20c-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g20c",
+        "experience_level": "5y",
+        "grade": "C / G20C",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 15.75,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G20C, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g20c-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g20c",
+        "experience_level": "8y",
+        "grade": "C / G20C",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 16.21,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G20C, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g20c-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g20c",
+        "experience_level": "11y",
+        "grade": "C / G20C",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 16.69,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G20C, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g21-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g21",
+        "experience_level": "0y",
+        "grade": "C / G21",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 15.38,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G21, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g21-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g21",
+        "experience_level": "5y",
+        "grade": "C / G21",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 16.03,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G21, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g21-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g21",
+        "experience_level": "8y",
+        "grade": "C / G21",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 16.69,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G21, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g21-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g21",
+        "experience_level": "11y",
+        "grade": "C / G21",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 17.37,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G21, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g22-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g22",
+        "experience_level": "0y",
+        "grade": "C / G22",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 15.5,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G22, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g22-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g22",
+        "experience_level": "5y",
+        "grade": "C / G22",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 16.16,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G22, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g22-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g22",
+        "experience_level": "8y",
+        "grade": "C / G22",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 16.84,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G22, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g22-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "C",
+        "pay_class": "g22",
+        "experience_level": "11y",
+        "grade": "C / G22",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 17.55,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, C / G22, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g24d-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "D",
+        "pay_class": "g24d",
+        "experience_level": "0y",
+        "grade": "D / G24D",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 17.25,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, D / G24D, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g24d-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "D",
+        "pay_class": "g24d",
+        "experience_level": "5y",
+        "grade": "D / G24D",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 17.76,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, D / G24D, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g24d-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "D",
+        "pay_class": "g24d",
+        "experience_level": "8y",
+        "grade": "D / G24D",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 18.28,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, D / G24D, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g24d-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "D",
+        "pay_class": "g24d",
+        "experience_level": "11y",
+        "grade": "D / G24D",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 18.84,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, D / G24D, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g25e-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g25e",
+        "experience_level": "0y",
+        "grade": "E / G25E",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 18.7,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G25E, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g25e-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g25e",
+        "experience_level": "5y",
+        "grade": "E / G25E",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 19.26,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G25E, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g25e-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g25e",
+        "experience_level": "8y",
+        "grade": "E / G25E",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 19.82,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G25E, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g25e-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g25e",
+        "experience_level": "11y",
+        "grade": "E / G25E",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 20.4,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G25E, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g26-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g26",
+        "experience_level": "0y",
+        "grade": "E / G26",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 18.7,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G26, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g26-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g26",
+        "experience_level": "5y",
+        "grade": "E / G26",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 19.26,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G26, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g26-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g26",
+        "experience_level": "8y",
+        "grade": "E / G26",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 20.11,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G26, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g26-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g26",
+        "experience_level": "11y",
+        "grade": "E / G26",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 20.99,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G26, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g27-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g27",
+        "experience_level": "0y",
+        "grade": "E / G27",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 18.7,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G27, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g27-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g27",
+        "experience_level": "5y",
+        "grade": "E / G27",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 19.53,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G27, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g27-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g27",
+        "experience_level": "8y",
+        "grade": "E / G27",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 20.41,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G27, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g27-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "E",
+        "pay_class": "g27",
+        "experience_level": "11y",
+        "grade": "E / G27",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 21.3,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, E / G27, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g28f-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g28f",
+        "experience_level": "0y",
+        "grade": "F / G28F",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 20.82,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G28F, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g28f-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g28f",
+        "experience_level": "5y",
+        "grade": "F / G28F",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 21.46,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G28F, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g28f-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g28f",
+        "experience_level": "8y",
+        "grade": "F / G28F",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 22.09,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G28F, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g28f-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g28f",
+        "experience_level": "11y",
+        "grade": "F / G28F",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 22.72,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G28F, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g29-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g29",
+        "experience_level": "0y",
+        "grade": "F / G29",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 20.82,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G29, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g29-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g29",
+        "experience_level": "5y",
+        "grade": "F / G29",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 21.5,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G29, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g29-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g29",
+        "experience_level": "8y",
+        "grade": "F / G29",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 22.48,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G29, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g29-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g29",
+        "experience_level": "11y",
+        "grade": "F / G29",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 23.46,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G29, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g30-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g30",
+        "experience_level": "0y",
+        "grade": "F / G30",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 22.77,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G30, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g30-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g30",
+        "experience_level": "5y",
+        "grade": "F / G30",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 23.86,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G30, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g30-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g30",
+        "experience_level": "8y",
+        "grade": "F / G30",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 24.94,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G30, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g30-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g30",
+        "experience_level": "11y",
+        "grade": "F / G30",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 26.04,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G30, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g31-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g31",
+        "experience_level": "0y",
+        "grade": "F / G31",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 23.94,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G31, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g31-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g31",
+        "experience_level": "5y",
+        "grade": "F / G31",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 25.09,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G31, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g31-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g31",
+        "experience_level": "8y",
+        "grade": "F / G31",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 26.24,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G31, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g31-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g31",
+        "experience_level": "11y",
+        "grade": "F / G31",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 27.39,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G31, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g32-0y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g32",
+        "experience_level": "0y",
+        "grade": "F / G32",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 25.54,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G32, 0 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g32-5y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g32",
+        "experience_level": "5y",
+        "grade": "F / G32",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 26.76,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G32, 5 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g32-8y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g32",
+        "experience_level": "8y",
+        "grade": "F / G32",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 27.99,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G32, 8 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "sostes-2026-09-g32-11y",
+      "occupation_id": "practical-nurse",
+      "occupation_ids": [
+        "practical-nurse"
+      ],
+      "agreement_id": "private-social-services",
+      "classification": {
+        "sector": "private-social-services",
+        "region": "other-finland",
+        "pay_group": "F",
+        "pay_class": "g32",
+        "experience_level": "11y",
+        "grade": "F / G32",
+        "points": null,
+        "job_type": "employee"
+      },
+      "wage": {
+        "amount": 29.23,
+        "monthly_amount": null,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-09-01",
+      "effective_until": null,
+      "source_name": "Tehy",
+      "source_url": "https://www.tehy.fi/fi/tyoelamaopas/tyoehtosopimukset/sostes-yksityisen-sosiaalipalvelualan-tyoehtosopimus",
+      "notes": "This is the Other Finland hourly wage-scale amount for the selected private social services pay class and experience stage. It is not used for the capital region or for public-sector practical nurses. A job title does not identify the pay class.",
+      "conditions": "Other Finland, F / G32, 11 years.",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
     }
-  ],
-  "allowed_wage_units": [
-    "EUR_HOUR",
-    "EUR_MONTH",
-    "EUR_YEAR"
-  ],
-  "allowed_wage_types": [
-    "TES_MINIMUM",
-    "BASE_PAY",
-    "AVERAGE",
-    "MEDIAN",
-    "ACTUAL_OBSERVED",
-    "ESTIMATE",
-    "OTHER",
-    "OTHER_VERIFIED"
-  ],
-  "allowed_verification_statuses": [
-    "VERIFIED",
-    "REVIEW_REQUIRED",
-    "EXPIRED",
-    "UNVERIFIED"
-  ],
-  "publication_rule": "A numeric wage is shown as current only when verification_status is VERIFIED, validation passes, today is on or after effective_from, and today is on or before effective_until when that date exists."
+  ]
 }

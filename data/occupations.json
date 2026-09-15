@@ -2,8 +2,10 @@
   "schema_version": 1,
   "field_notes": {
     "aliases": "Search aliases only. They do not prove that one wage applies to every listed name.",
-    "question_flow": "Add question IDs only when verified wage records actually require those answers. Empty means no extra questions are asked.",
-    "requires_classification": "Set true only when an occupation has a verified question flow."
+    "question_flow": "Add question IDs only when verified wage records actually require those answers, or when a guidance question must be asked without numeric records.",
+    "requires_classification": "Set true when an occupation has a verified question flow.",
+    "directory_group": "Used only for the wages directory grouping.",
+    "preparing": "Occupation-specific empty-state copy. Do not invent wages in this object."
   },
   "occupations": [
     {
@@ -12,6 +14,7 @@
       "slug": "cleaner",
       "aliases": ["cleaning", "cleaning worker", "siivooja", "property services cleaner"],
       "sector": "property-services",
+      "directory_group": "cleaning-property",
       "status": "ACTIVE",
       "popular": true,
       "requires_classification": true,
@@ -21,45 +24,159 @@
       "id": "restaurant-worker",
       "name": "Restaurant worker",
       "slug": "restaurant-worker",
-      "aliases": ["restaurant", "hospitality worker", "restaurant employee"],
-      "sector": "restaurant-hospitality",
+      "aliases": ["restaurant", "restaurant employee", "ravintolatyöntekijä"],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
       "status": "ACTIVE",
       "popular": true,
-      "requires_classification": false,
-      "question_flow": []
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "waiter",
+      "name": "Waiter",
+      "slug": "waiter",
+      "aliases": ["tarjoilija"],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "waitress",
+      "name": "Waitress",
+      "slug": "waitress",
+      "aliases": [],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "cook",
+      "name": "Cook",
+      "slug": "cook",
+      "aliases": ["kokki"],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "chef",
+      "name": "Chef",
+      "slug": "chef",
+      "aliases": [],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "kitchen-worker",
+      "name": "Kitchen worker",
+      "slug": "kitchen-worker",
+      "aliases": ["kitchen assistant", "kitchen staff"],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "hotel-worker",
+      "name": "Hotel worker",
+      "slug": "hotel-worker",
+      "aliases": ["hotel employee", "hotel staff", "hotellityöntekijä"],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
+    },
+    {
+      "id": "hospitality-worker",
+      "name": "Hospitality worker",
+      "slug": "hospitality-worker",
+      "aliases": ["hospitality", "hospitality employee"],
+      "sector": "hotel-restaurant-leisure",
+      "directory_group": "hospitality-restaurants",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["hospitality-pay-group", "hospitality-experience"]
     },
     {
       "id": "retail-salesperson",
       "name": "Retail salesperson",
       "slug": "retail-salesperson",
-      "aliases": ["retail worker", "salesperson", "shop worker"],
-      "sector": "retail",
+      "aliases": ["retail worker", "salesperson", "shop worker", "shop employee"],
+      "sector": "commerce",
+      "directory_group": "retail-commerce",
       "status": "ACTIVE",
-      "popular": false,
-      "requires_classification": false,
-      "question_flow": []
+      "popular": true,
+      "requires_classification": true,
+      "question_flow": ["commerce-region", "commerce-group", "commerce-seniority"]
     },
     {
       "id": "warehouse-worker",
       "name": "Warehouse worker",
       "slug": "warehouse-worker",
-      "aliases": ["warehouse", "logistics worker", "warehouse operative"],
+      "aliases": ["warehouse", "warehouse operative"],
       "sector": "warehouse-logistics",
+      "directory_group": "logistics",
       "status": "ACTIVE",
       "popular": false,
-      "requires_classification": false,
-      "question_flow": []
+      "requires_classification": true,
+      "question_flow": ["warehouse-sector", "commerce-region", "commerce-group", "commerce-seniority"],
+      "preparing": {
+        "title": "Warehouse worker wage information",
+        "body": "Warehouse and logistics work can fall under different sectors and agreements. Labour Finland does not guess an agreement from the job title alone. If the work is not commerce logistics, a verified wage table has not been published yet."
+      }
+    },
+    {
+      "id": "logistics-worker",
+      "name": "Logistics worker",
+      "slug": "logistics-worker",
+      "aliases": ["logistics"],
+      "sector": "warehouse-logistics",
+      "directory_group": "logistics",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": true,
+      "question_flow": ["warehouse-sector", "commerce-region", "commerce-group", "commerce-seniority"],
+      "preparing": {
+        "title": "Logistics worker wage information",
+        "body": "Logistics work can fall under different sectors and agreements. Labour Finland does not guess an agreement from the job title alone."
+      }
     },
     {
       "id": "construction-worker",
       "name": "Construction worker",
       "slug": "construction-worker",
-      "aliases": ["construction", "building worker"],
+      "aliases": ["construction", "building worker", "builder", "rakennustyöntekijä"],
       "sector": "construction",
+      "directory_group": "construction",
       "status": "ACTIVE",
-      "popular": false,
-      "requires_classification": false,
-      "question_flow": []
+      "popular": true,
+      "requires_classification": true,
+      "question_flow": ["construction-sector"],
+      "preparing": {
+        "title": "Construction wages depend on the applicable construction sector and classification.",
+        "body": "Labour Finland has not yet published a verified numeric wage table for the selected construction sector. Check the current sector table with the Finnish Construction Trade Union.",
+        "source_name": "Finnish Construction Trade Union",
+        "source_url": "https://rakennusliitto.fi/en/wages-and-working-conditions/"
+      }
     },
     {
       "id": "practical-nurse",
@@ -67,21 +184,31 @@
       "slug": "practical-nurse",
       "aliases": ["social care worker", "care worker", "lähihoitaja"],
       "sector": "social-care",
+      "directory_group": "health-social-care",
       "status": "ACTIVE",
-      "popular": false,
-      "requires_classification": false,
-      "question_flow": []
+      "popular": true,
+      "requires_classification": true,
+      "question_flow": ["care-sector", "care-region", "social-pay-class", "social-experience"],
+      "preparing": {
+        "title": "Practical nurse wage information",
+        "body": "A job title does not identify one wage. Labour Finland currently publishes a verified private social services table for Other Finland only. Public-sector and capital-region pay structures are not published as this table."
+      }
     },
     {
       "id": "security-guard",
       "name": "Security guard",
       "slug": "security-guard",
-      "aliases": ["security worker", "guard"],
+      "aliases": ["security worker", "guard", "vartija"],
       "sector": "security",
+      "directory_group": "security",
       "status": "ACTIVE",
       "popular": false,
       "requires_classification": false,
-      "question_flow": []
+      "question_flow": [],
+      "preparing": {
+        "title": "Security guard wage information is being verified.",
+        "body": "Security work is a separate collective-agreement sector. Labour Finland has not published a verified numeric security-sector wage in this version. Cleaner, commerce and hospitality tables are not used for this occupation."
+      }
     },
     {
       "id": "office-administrative-worker",
@@ -89,10 +216,15 @@
       "slug": "office-administrative-worker",
       "aliases": ["office worker", "administrative worker", "administrator"],
       "sector": "office-administration",
+      "directory_group": "office-administration",
       "status": "ACTIVE",
       "popular": false,
       "requires_classification": false,
-      "question_flow": []
+      "question_flow": [],
+      "preparing": {
+        "title": "Office and administrative wage information",
+        "body": "Office and administrative roles can fall under different sectors and collective agreements. Labour Finland has not identified one verified wage that can safely be applied to all office jobs."
+      }
     },
     {
       "id": "software-developer",
@@ -100,32 +232,15 @@
       "slug": "software-developer",
       "aliases": ["developer", "software engineer", "programmer", "IT developer"],
       "sector": "it-technology",
-      "status": "ACTIVE",
-      "popular": true,
-      "requires_classification": false,
-      "question_flow": []
-    },
-    {
-      "id": "hotel-worker",
-      "name": "Hotel worker",
-      "slug": "hotel-worker",
-      "aliases": ["hotel employee", "hospitality employee", "hotel staff"],
-      "sector": "hotel-hospitality",
+      "directory_group": "it-technology",
       "status": "ACTIVE",
       "popular": false,
       "requires_classification": false,
-      "question_flow": []
-    },
-    {
-      "id": "hospitality-worker",
-      "name": "Hospitality worker",
-      "slug": "hospitality-worker",
-      "aliases": ["hospitality"],
-      "sector": "hotel-hospitality",
-      "status": "ACTIVE",
-      "popular": false,
-      "requires_classification": false,
-      "question_flow": []
+      "question_flow": [],
+      "preparing": {
+        "title": "Software developer pay information",
+        "body": "Labour Finland has not identified one verified collective-agreement minimum that can safely be applied to all software developer jobs. An average or median salary, if published later, would be labelled as such and would not be shown as a collective-agreement wage."
+      }
     }
   ]
 }

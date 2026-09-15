@@ -152,10 +152,13 @@ if (calculatorForm) {
     if (matching && context) {
       verifiedRate = matching.wage.amount;
       const agreement = engine.getAgreement(dataset, matching.agreement_id);
+      const classificationParam = params.get("classification");
       const parts = [
         `Using verified wage information for ${occupation.name}.`,
         agreement ? `Agreement: ${agreement.short_name || agreement.name}.` : "",
-        matching.classification && matching.classification.grade ? `Classification: ${matching.classification.grade}.` : "",
+        classificationParam || (matching.classification && matching.classification.grade)
+          ? `Classification: ${classificationParam || matching.classification.grade}.`
+          : "",
         "You can change the hourly rate.",
       ].filter(Boolean);
       verifiedLabel = parts.join(" ");
