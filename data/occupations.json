@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "field_notes": {
+    "aliases": "Search aliases only. They do not prove that one wage applies to every listed name.",
+    "question_flow": "Add question IDs only when verified wage records actually require those answers. Empty means no extra questions are asked.",
+    "requires_classification": "Set true only when an occupation has a verified question flow."
+  },
+  "occupations": [
+    {
+      "id": "cleaner",
+      "name": "Cleaner",
+      "slug": "cleaner",
+      "aliases": ["cleaning", "cleaning worker", "siivooja", "property services cleaner"],
+      "sector": "property-services",
+      "status": "ACTIVE",
+      "popular": true,
+      "requires_classification": true,
+      "question_flow": ["cleaner-pay-group"]
+    },
+    {
+      "id": "restaurant-worker",
+      "name": "Restaurant worker",
+      "slug": "restaurant-worker",
+      "aliases": ["restaurant", "hospitality worker", "restaurant employee"],
+      "sector": "restaurant-hospitality",
+      "status": "ACTIVE",
+      "popular": true,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "retail-salesperson",
+      "name": "Retail salesperson",
+      "slug": "retail-salesperson",
+      "aliases": ["retail worker", "salesperson", "shop worker"],
+      "sector": "retail",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "warehouse-worker",
+      "name": "Warehouse worker",
+      "slug": "warehouse-worker",
+      "aliases": ["warehouse", "logistics worker", "warehouse operative"],
+      "sector": "warehouse-logistics",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "construction-worker",
+      "name": "Construction worker",
+      "slug": "construction-worker",
+      "aliases": ["construction", "building worker"],
+      "sector": "construction",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "practical-nurse",
+      "name": "Practical nurse",
+      "slug": "practical-nurse",
+      "aliases": ["social care worker", "care worker", "lähihoitaja"],
+      "sector": "social-care",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "security-guard",
+      "name": "Security guard",
+      "slug": "security-guard",
+      "aliases": ["security worker", "guard"],
+      "sector": "security",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "office-administrative-worker",
+      "name": "Office or administrative worker",
+      "slug": "office-administrative-worker",
+      "aliases": ["office worker", "administrative worker", "administrator"],
+      "sector": "office-administration",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "software-developer",
+      "name": "Software developer",
+      "slug": "software-developer",
+      "aliases": ["developer", "software engineer", "programmer", "IT developer"],
+      "sector": "it-technology",
+      "status": "ACTIVE",
+      "popular": true,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "hotel-worker",
+      "name": "Hotel worker",
+      "slug": "hotel-worker",
+      "aliases": ["hotel employee", "hospitality employee", "hotel staff"],
+      "sector": "hotel-hospitality",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    },
+    {
+      "id": "hospitality-worker",
+      "name": "Hospitality worker",
+      "slug": "hospitality-worker",
+      "aliases": ["hospitality"],
+      "sector": "hotel-hospitality",
+      "status": "ACTIVE",
+      "popular": false,
+      "requires_classification": false,
+      "question_flow": []
+    }
+  ]
+}

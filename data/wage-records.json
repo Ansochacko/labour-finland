@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "wage_records": [
+    {
+      "id": "ps-cleaner-2026-08-trainee",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "trainee",
+        "grade": "Trainee",
+        "points": null,
+        "job_type": "trainee",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 11.33,
+        "monthly_amount": 1824,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Trainee rate in the Property Services wage table.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-2",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-2",
+        "grade": "Grade 2",
+        "points": "17–20",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 12.59,
+        "monthly_amount": 2027,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-3",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-3",
+        "grade": "Grade 3",
+        "points": "21–24",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 13.22,
+        "monthly_amount": 2128,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-4",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-4",
+        "grade": "Grade 4",
+        "points": "25–28",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 13.88,
+        "monthly_amount": 2235,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-5",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-5",
+        "grade": "Grade 5",
+        "points": "29–33",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 14.58,
+        "monthly_amount": 2347,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-6",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-6",
+        "grade": "Grade 6",
+        "points": "34–38",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 15.3,
+        "monthly_amount": 2463,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-7",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-7",
+        "grade": "Grade 7",
+        "points": "39–44",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 15.92,
+        "monthly_amount": 2563,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-8",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-8",
+        "grade": "Grade 8",
+        "points": "45–51",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 16.55,
+        "monthly_amount": 2665,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-9",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-9",
+        "grade": "Grade 9",
+        "points": "52–58",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 17.22,
+        "monthly_amount": 2772,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2026-08-grade-10",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-10",
+        "grade": "Grade 10",
+        "points": "59–69",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 17.9,
+        "monthly_amount": 2882,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2026-08-01",
+      "effective_until": "2027-06-30",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-trainee",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "trainee",
+        "grade": "Trainee",
+        "points": null,
+        "job_type": "trainee",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 11.6,
+        "monthly_amount": 1868,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Trainee rate in the Property Services wage table.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-2",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-2",
+        "grade": "Grade 2",
+        "points": "17–20",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 12.89,
+        "monthly_amount": 2075,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-3",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-3",
+        "grade": "Grade 3",
+        "points": "21–24",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 13.54,
+        "monthly_amount": 2180,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-4",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-4",
+        "grade": "Grade 4",
+        "points": "25–28",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 14.21,
+        "monthly_amount": 2288,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-5",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-5",
+        "grade": "Grade 5",
+        "points": "29–33",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 14.92,
+        "monthly_amount": 2402,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-6",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-6",
+        "grade": "Grade 6",
+        "points": "34–38",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 15.67,
+        "monthly_amount": 2523,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-7",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-7",
+        "grade": "Grade 7",
+        "points": "39–44",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 16.3,
+        "monthly_amount": 2624,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-8",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-8",
+        "grade": "Grade 8",
+        "points": "45–51",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 16.95,
+        "monthly_amount": 2729,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-9",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-9",
+        "grade": "Grade 9",
+        "points": "52–58",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 17.63,
+        "monthly_amount": 2838,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-cleaner-2027-07-grade-10",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "classification": {
+        "pay_group": "grade-10",
+        "grade": "Grade 10",
+        "points": "59–69",
+        "job_type": "scale",
+        "region": null,
+        "experience_level": null
+      },
+      "wage": {
+        "amount": 18.33,
+        "monthly_amount": 2951,
+        "unit": "EUR_HOUR",
+        "type": "TES_MINIMUM"
+      },
+      "effective_from": "2027-07-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "notes": "This is the wage-scale amount for the selected job grade under the Property Services collective agreement. Your actual pay may be higher and other employment terms or supplements may apply.",
+      "conditions": "Applies to the selected Property Services job grade. Labour Finland does not determine the legal classification of a workplace.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "allowed_wage_units": [
+    "EUR_HOUR",
+    "EUR_MONTH",
+    "EUR_YEAR"
+  ],
+  "allowed_wage_types": [
+    "TES_MINIMUM",
+    "BASE_PAY",
+    "AVERAGE",
+    "MEDIAN",
+    "ACTUAL_OBSERVED",
+    "ESTIMATE",
+    "OTHER",
+    "OTHER_VERIFIED"
+  ],
+  "allowed_verification_statuses": [
+    "VERIFIED",
+    "REVIEW_REQUIRED",
+    "EXPIRED",
+    "UNVERIFIED"
+  ],
+  "publication_rule": "A numeric wage is shown as current only when verification_status is VERIFIED, validation passes, today is on or after effective_from, and today is on or before effective_until when that date exists."
+}

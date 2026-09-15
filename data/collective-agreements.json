@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "collective_agreements": [
+    {
+      "id": "property-services-2025-2028",
+      "name": "Property Services collective agreement (Kiinteistöpalvelualan työntekijöitä koskeva työehtosopimus)",
+      "short_name": "Property Services",
+      "sector": "property-services",
+      "valid_from": "2025-04-01",
+      "valid_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "allowed_verification_statuses": [
+    "VERIFIED",
+    "REVIEW_REQUIRED",
+    "EXPIRED",
+    "UNVERIFIED"
+  ],
+  "publication_rule": "Do not invent agreement names or source URLs. Leave a record UNVERIFIED until the official name, dates and source have been checked."
+}

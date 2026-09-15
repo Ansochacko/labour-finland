@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "supplements": [
+    {
+      "id": "ps-evening-2025",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "name": "Evening supplement",
+      "category": "EVENING",
+      "amount": 0.73,
+      "calculation_rule": null,
+      "unit": "EUR_HOUR",
+      "conditions": "The source agreement may apply this addition between 18:00 and 23:00 when the work is not treated as regular shift work. Confirm current hours and conditions from the original source.",
+      "effective_from": "2025-04-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-night-2025",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "name": "Night supplement",
+      "category": "NIGHT",
+      "amount": 1.36,
+      "calculation_rule": null,
+      "unit": "EUR_HOUR",
+      "conditions": "The source agreement may apply this addition between 23:00 and 06:00 when the work is not treated as regular shift work. Confirm current hours and conditions from the original source.",
+      "effective_from": "2025-04-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-saturday-selected-2025",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "name": "Selected Saturday compensation",
+      "category": "SATURDAY",
+      "amount": null,
+      "calculation_rule": "50% increased pay on certain Saturdays named in the source agreement.",
+      "unit": null,
+      "conditions": "This is not a Saturday rate for every week. Confirm the named days from the original source.",
+      "effective_from": "2025-04-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "ps-sunday-eve-2025",
+      "occupation_id": "cleaner",
+      "agreement_id": "property-services-2025-2028",
+      "name": "Specified public-holiday and eve compensation",
+      "category": "SUNDAY",
+      "amount": null,
+      "calculation_rule": "100% increased pay on specified public-holiday and eve dates named in the source agreement, including Midsummer Eve, Christmas Eve, May Day and Independence Day.",
+      "unit": null,
+      "conditions": "Applies only to the days named in the source agreement. Confirm the exact day and working-time arrangement from the original source.",
+      "effective_from": "2025-04-01",
+      "effective_until": "2028-03-31",
+      "source_name": "PAM — Service Union United",
+      "source_url": "https://www.pam.fi/tes/kiinteistopalvelualan-tyoehtosopimus/",
+      "last_verified": "2026-09-15",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "supported_categories": [
+    "EVENING",
+    "NIGHT",
+    "SUNDAY",
+    "SATURDAY",
+    "OVERTIME",
+    "OTHER"
+  ],
+  "publication_rule": "A supplement requires its own applicability, validity, source and verification status. No supplement is inherited across sectors, and no rate is assumed."
+}

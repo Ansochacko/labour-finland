@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.cursor/
+.vercel
+node_modules/
+npm-debug.log*
+.cache/
+dist/
+tmp/
+temp/
+*.local

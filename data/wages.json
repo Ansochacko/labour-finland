@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "replaced_by": [
+    "occupations.json",
+    "wage-records.json",
+    "collective-agreements.json",
+    "wage-questions.json",
+    "supplements.json"
+  ],
+  "last_dataset_review": null,
+  "popular_occupations": [
+    "Cleaner",
+    "Restaurant worker",
+    "Software developer"
+  ],
+  "records": [],
+  "note": "V1.3 production wage lookup reads the split data files. This file is retained only as a compatibility stub and contains no wage amounts."
+}

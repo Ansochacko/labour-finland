@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "records": [],
+  "allowed_verification_statuses": [
+    "VERIFIED",
+    "REVIEW_REQUIRED",
+    "EXPIRED",
+    "UNVERIFIED"
+  ],
+  "required_fields_for_publication": [
+    "id",
+    "topic",
+    "path",
+    "summary",
+    "source_name",
+    "source_url",
+    "last_verified",
+    "verification_status"
+  ],
+  "optional_time_fields": [
+    "effective_from",
+    "effective_until"
+  ],
+  "publication_rule": "Time-sensitive factual information must not be presented as verified unless the source, official source URL and last-verified date are recorded."
+}

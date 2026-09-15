@@ -1,0 +1,17 @@
+{
+  "name": "Labour Finland",
+  "short_name": "Labour Finland",
+  "description": "Independent wage and working-life information for Finland.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ee",
+  "theme_color": "#126b70",
+  "icons": [
+    {
+      "src": "assets/icons/mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

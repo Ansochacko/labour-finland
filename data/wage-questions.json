@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "questions": [
+    {
+      "id": "cleaner-pay-group",
+      "type": "single_choice",
+      "answer_key": "pay_group",
+      "prompt": "Which description is closest to your job?",
+      "why": "Property Services pay depends on a job grade and a points assessment of the work. Labour Finland does not choose a grade for you. If you are unsure, you can view the wage table and check your employment information, employer or the relevant organisation.",
+      "verification_status": "VERIFIED",
+      "options": [
+        { "value": "trainee", "label": "Trainee" },
+        { "value": "grade-2", "label": "Grade 2 (17–20 points)" },
+        { "value": "grade-3", "label": "Grade 3 (21–24 points)" },
+        { "value": "grade-4", "label": "Grade 4 (25–28 points)" },
+        { "value": "grade-5", "label": "Grade 5 (29–33 points)" },
+        { "value": "grade-6", "label": "Grade 6 (34–38 points)" },
+        { "value": "grade-7", "label": "Grade 7 (39–44 points)" },
+        { "value": "grade-8", "label": "Grade 8 (45–51 points)" },
+        { "value": "grade-9", "label": "Grade 9 (52–58 points)" },
+        { "value": "grade-10", "label": "Grade 10 (59–69 points)" },
+        { "value": "__table__", "label": "I'm not sure yet", "action": "SHOW_TABLE" }
+      ]
+    }
+  ],
+  "supported_question_types": [
+    "single_choice",
+    "yes_no",
+    "experience_level",
+    "region",
+    "job_type",
+    "pay_group",
+    "qualification"
+  ],
+  "publication_rule": "A question may be shown only when it is required to distinguish currently valid VERIFIED wage records. Do not invent pay groups, job types or other classifications."
+}
