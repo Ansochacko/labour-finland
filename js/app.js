@@ -10,12 +10,17 @@ const MOVING_LINKS = [
   ["places-in-finland.html", "Places"],
 ];
 
+function siteHref(path) {
+  if (!path || /^(https?:|#|\/)/i.test(path)) return path;
+  return `/${path}`;
+}
+
 function enhanceFavicon() {
   if (document.querySelector('link[rel="icon"]')) return;
   const icon = document.createElement("link");
   icon.rel = "icon";
   icon.type = "image/svg+xml";
-  icon.href = "assets/icons/mark.svg";
+  icon.href = "/assets/icons/mark.svg";
   document.head.append(icon);
 }
 
@@ -33,7 +38,7 @@ function enhanceMovingNav() {
   sub.setAttribute("aria-label", "Moving to Finland sections");
   MOVING_LINKS.forEach(([href, label]) => {
     const link = document.createElement("a");
-    link.href = href;
+    link.href = siteHref(href);
     link.textContent = label;
     if (location.pathname.replace(/^\//, "").endsWith(href)) link.setAttribute("aria-current", "page");
     sub.append(link);
@@ -83,7 +88,7 @@ function enhanceFooter() {
       group.append(heading);
       links.forEach(([href, label]) => {
         const link = document.createElement("a");
-        link.href = href;
+        link.href = siteHref(href);
         link.textContent = label;
         group.append(link);
       });
@@ -141,7 +146,7 @@ document.querySelectorAll("[data-privacy-choices]").forEach((link) => {
       message.hidden = false;
       message.focus();
     } else {
-      window.location.href = "privacy.html#privacy-choices";
+      window.location.href = "/privacy.html#privacy-choices";
     }
   });
 });

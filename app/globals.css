@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-paper text-ink selection:bg-accent-soft selection:text-accent-dark;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Headings typography refinements */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-ink;
+    text-wrap: balance;
+  }
+
+  /* Focus ring accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-paper;
+  }
+
+  /* Monospace tabular numbers for financial figures */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .prose-lf p + p {
+    @apply mt-4;
+  }
+
+  .prose-lf a {
+    @apply text-accent font-medium underline underline-offset-4 decoration-accent/40 hover:decoration-accent transition-colors;
+  }
+
+  .prose-lf strong {
+    @apply font-semibold text-ink;
+  }
+
+  .prose-lf ul {
+    @apply my-4 space-y-2 list-disc list-inside;
+  }
+
+  .prose-lf ol {
+    @apply my-4 space-y-2 list-decimal list-inside;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "license": "CC BY 4.0",
+  "attribution": "Source: Statistics Finland, Structure of Earnings 2024, table 15au. Licence: CC BY 4.0.",
+  "source_name": "Statistics Finland — Structure of Earnings 2024 (table 15au)",
+  "source_url": "https://pxdata.stat.fi/PxWeb/pxweb/en/StatFin/StatFin__pra/15au.px/",
+  "documentation_url": "https://stat.fi/en/statistics/documentation/pra",
+  "retrieved": "2026-09-19",
+  "last_verified": "2026-09-19",
+  "statistic_year": "2024",
+  "notes": [
+    "Figures are full-time monthly total earnings (average and median) for all employer sectors combined (S0) and sexes total.",
+    "They are official statistics, not collective-agreement minimums.",
+    "Occupation titles are Statistics Finland Classification of Occupations 2010. They are not the same as a TES job grade.",
+    "Confidential cells are omitted rather than estimated. Building construction labourers (9313) earnings were confidential in this query."
+  ],
+  "records": [
+    {
+      "id": "statfin-2024-9112-cleaner",
+      "occupation_id": "cleaner",
+      "isco_code": "9112",
+      "statfin_occupation": "9112 Cleaners and helpers in offices, hotels and other establishments",
+      "employee_count": 45376,
+      "average_monthly_eur": 2426,
+      "median_monthly_eur": 2365
+    },
+    {
+      "id": "statfin-2024-5131-waiter",
+      "occupation_id": "waiter",
+      "occupation_ids": ["waiter", "waitress"],
+      "isco_code": "5131",
+      "statfin_occupation": "5131 Waiters",
+      "employee_count": 5589,
+      "average_monthly_eur": 2784,
+      "median_monthly_eur": 2680
+    },
+    {
+      "id": "statfin-2024-5120-cook",
+      "occupation_id": "cook",
+      "isco_code": "5120",
+      "statfin_occupation": "5120 Cooks",
+      "employee_count": 25461,
+      "average_monthly_eur": 2956,
+      "median_monthly_eur": 2845
+    },
+    {
+      "id": "statfin-2024-3434-chef",
+      "occupation_id": "chef",
+      "isco_code": "3434",
+      "statfin_occupation": "3434 Chefs",
+      "employee_count": 1692,
+      "average_monthly_eur": 3637,
+      "median_monthly_eur": 3520
+    },
+    {
+      "id": "statfin-2024-9412-kitchen",
+      "occupation_id": "kitchen-worker",
+      "isco_code": "9412",
+      "statfin_occupation": "9412 Kitchen helpers",
+      "employee_count": 10148,
+      "average_monthly_eur": 2436,
+      "median_monthly_eur": 2400
+    },
+    {
+      "id": "statfin-2024-5223-retail",
+      "occupation_id": "retail-salesperson",
+      "isco_code": "5223",
+      "statfin_occupation": "5223 Shop sales assistants",
+      "employee_count": 43777,
+      "average_monthly_eur": 3068,
+      "median_monthly_eur": 2805
+    },
+    {
+      "id": "statfin-2024-53219-nurse",
+      "occupation_id": "practical-nurse",
+      "isco_code": "53219",
+      "statfin_occupation": "53219 Other practical nurses",
+      "employee_count": 16420,
+      "average_monthly_eur": 3198,
+      "median_monthly_eur": 3154
+    },
+    {
+      "id": "statfin-2024-5414-security",
+      "occupation_id": "security-guard",
+      "isco_code": "5414",
+      "statfin_occupation": "5414 Security guards",
+      "employee_count": 6495,
+      "average_monthly_eur": 3010,
+      "median_monthly_eur": 2858
+    },
+    {
+      "id": "statfin-2024-2512-software",
+      "occupation_id": "software-developer",
+      "isco_code": "2512",
+      "statfin_occupation": "2512 Software developers",
+      "employee_count": 30334,
+      "average_monthly_eur": 5211,
+      "median_monthly_eur": 5020
+    }
+  ]
+}

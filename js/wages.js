@@ -17,8 +17,12 @@ function addText(parent, elementName, text, className) {
   return element;
 }
 
+function siteUrl(path) {
+  return new URL(String(path).replace(/^\//, ""), `${window.location.origin}/`).toString();
+}
+
 async function loadJson(path) {
-  const response = await fetch(path, { headers: { Accept: "application/json" } });
+  const response = await fetch(siteUrl(path), { headers: { Accept: "application/json" } });
   if (!response.ok) throw new Error(`${path} could not be loaded.`);
   return response.json();
 }
@@ -53,11 +57,19 @@ function calculatorUrl(occupation, record) {
   if (record.agreement_id) params.set("agreement", record.agreement_id);
   const label = classificationLabel(record.classification);
   if (label) params.set("classification", label);
-  return `calculator.html?${params.toString()}`;
+  return `/calculator.html?${params.toString()}`;
 }
 
 function occupationUrl(occupation) {
-  return `wages.html?occupation=${encodeURIComponent(occupation.slug || occupation.id)}`;
+  return `/occupations/${encodeURIComponent(occupation.slug || occupation.id)}.html`;
+}
+
+function occupationSlugFromLocation() {
+  const pathMatch = window.location.pathname.match(/\/occupations\/([^/]+)\.html$/i);
+  if (pathMatch) return decodeURIComponent(pathMatch[1]);
+  const form = document.querySelector("[data-wage-form]");
+  if (form && form.dataset.occupation) return form.dataset.occupation;
+  return new URLSearchParams(window.location.search).get("occupation");
 }
 
 function classificationLabel(classification) {
@@ -412,7 +424,7 @@ const DIRECTORY_GROUPS = [
   ["it-technology", "IT & technology"],
 ];
 
-function renderOccupationDirectory(container, dataset, onSelect) {
+function renderOccupationDirectory(container, dataset) {
   container.replaceChildren();
   DIRECTORY_GROUPS.forEach(([groupId, title]) => {
     const occupations = dataset.occupations.filter(
@@ -425,14 +437,13 @@ function renderOccupationDirectory(container, dataset, onSelect) {
     const list = document.createElement("div");
     list.className = "directory-list";
     occupations.forEach((occupation) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "directory-card";
-      addText(button, "strong", occupation.name);
+      const link = document.createElement("a");
+      link.className = "directory-card";
+      link.href = occupationUrl(occupation);
+      addText(link, "strong", occupation.name);
       const status = engine.occupationLookupStatus(dataset, occupation);
-      addText(button, "span", engine.lookupStatusLabel(status), "directory-status");
-      button.addEventListener("click", () => onSelect(occupation));
-      list.append(button);
+      addText(link, "span", engine.lookupStatusLabel(status), "directory-status");
+      list.append(link);
     });
     section.append(list);
     container.append(section);
@@ -569,18 +580,34 @@ async function initializeWageLookup() {
   };
 
   const applyOccupationSeo = (occupation) => {
-    if (!/wages\.html$/i.test(window.location.pathname)) return;
-    document.title = `${occupation.name} wages in Finland | Labour Finland`;
+    const pageUrl = `https://labourfinland.com${occupationUrl(occupation)}`;
+    const title = `${occupation.name} wages in Finland | Labour Finland`;
+    const description = `${occupation.name} wage information in Finland, with source and validity details where a verified record has been published.`;
+    if (!/\/occupations\/[^/]+\.html$/i.test(window.location.pathname)) {
+      document.title = title;
+      const heading = document.querySelector(".page-hero h1");
+      if (heading) heading.textContent = `${occupation.name} wages in Finland`;
+    }
     const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) {
-      canonical.href = `https://labourfinland.com/wages.html?occupation=${encodeURIComponent(occupation.slug || occupation.id)}`;
-    }
+    if (canonical) canonical.href = pageUrl;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) metaDescription.setAttribute("content", description);
     const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", `${occupation.name} wages in Finland | Labour Finland`);
+    if (ogTitle) ogTitle.setAttribute("content", title);
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) ogDescription.setAttribute("content", description);
     const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) {
-      ogUrl.setAttribute("content", `https://labourfinland.com/wages.html?occupation=${encodeURIComponent(occupation.slug || occupation.id)}`);
+    if (ogUrl) ogUrl.setAttribute("content", pageUrl);
+  };
+
+  const openOccupation = (occupation) => {
+    const targetPath = occupationUrl(occupation);
+    const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+    if (currentPath === targetPath) {
+      startOccupation(occupation);
+      return;
     }
+    window.location.href = targetPath;
   };
 
   const startOccupation = (occupation) => {
@@ -594,46 +621,43 @@ async function initializeWageLookup() {
       input.setAttribute("aria-expanded", "false");
       input.setAttribute("aria-activedescendant", "");
     }
-    const url = new URL(window.location.href);
-    url.searchParams.set("occupation", occupation.slug || occupation.id);
-    window.history.replaceState({}, "", url);
     applyOccupationSeo(occupation);
     renderResolved();
   };
 
   const autocomplete = bindAutocomplete(input, suggestions, dataset.occupations, (occupation) => {
     autocomplete.hide();
-    startOccupation(occupation);
+    openOccupation(occupation);
   });
 
   const popularContainer = document.querySelector("[data-popular-occupations]");
   const popularSection = document.querySelector("[data-popular-section]");
   if (popularContainer && popularSection) {
+    popularContainer.replaceChildren();
     popularOccupations(dataset.occupations).forEach((occupation) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "chip";
-      button.textContent = occupation.name;
-      button.addEventListener("click", () => startOccupation(occupation));
-      popularContainer.append(button);
+      const link = document.createElement("a");
+      link.className = "chip";
+      link.href = occupationUrl(occupation);
+      link.textContent = occupation.name;
+      popularContainer.append(link);
     });
     popularSection.hidden = false;
   }
 
   const directory = document.querySelector("[data-occupation-directory]");
-  if (directory) renderOccupationDirectory(directory, dataset, startOccupation);
+  if (directory) renderOccupationDirectory(directory, dataset);
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     autocomplete.hide();
     const matches = engine.findOccupations(dataset.occupations, input.value);
     if (matches.length === 1) {
-      startOccupation(matches[0]);
+      openOccupation(matches[0]);
       return;
     }
     if (matches.length > 1) {
       output.replaceChildren();
-      renderOccupationChoice(questionFlow, matches, startOccupation);
+      renderOccupationChoice(questionFlow, matches, openOccupation);
       return;
     }
     hideQuestionFlow(questionFlow);
@@ -641,11 +665,11 @@ async function initializeWageLookup() {
     output.focus();
   });
 
-  const requested = new URLSearchParams(window.location.search).get("occupation");
+  const requested = occupationSlugFromLocation();
   if (requested) {
     const matches = engine.findOccupations(dataset.occupations, requested);
     if (matches.length === 1) startOccupation(matches[0]);
-    else if (matches.length > 1) renderOccupationChoice(questionFlow, matches, startOccupation);
+    else if (matches.length > 1) renderOccupationChoice(questionFlow, matches, openOccupation);
     else {
       input.value = requested;
       renderPreparingState(output, requested);

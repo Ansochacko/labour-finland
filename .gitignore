@@ -15,3 +15,6 @@ dist/
 tmp/
 temp/
 *.local
+
+.next/
+next-env.d.ts
