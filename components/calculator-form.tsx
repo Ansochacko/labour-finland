@@ -41,30 +41,30 @@ export function CalculatorForm({ presetHourly }: { presetHourly?: number }) {
     <div className="grid gap-8 lg:grid-cols-2 items-start">
       {/* Input Parameters Panel */}
       <form
-        className="rounded-2xl border border-line bg-cream p-6 sm:p-7 shadow-card space-y-6"
+        className="rounded-xl border border-line bg-cream p-6 sm:p-7 shadow-card space-y-6"
         onSubmit={(event) => event.preventDefault()}
       >
         <div className="border-b border-line pb-4">
-          <span className="text-xs font-semibold uppercase tracking-wider text-muted">
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-muted">
             Step 1 · Working Pattern
           </span>
           <h2 className="font-serif text-2xl font-semibold text-ink mt-1">
-            Input hourly pay & hours
+            Input hourly pay &amp; hours
           </h2>
         </div>
 
         {/* Hourly Pay Field */}
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-ink" htmlFor="hourly-wage">
+          <label className="block font-mono text-[11px] font-bold uppercase tracking-wider text-ink" htmlFor="hourly-wage">
             Gross Hourly Wage (€ / hour)
           </label>
           <div className="relative mt-2">
-            <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-muted font-medium">
+            <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-muted font-mono font-medium">
               €
             </span>
             <input
               id="hourly-wage"
-              className="w-full rounded-xl border border-line bg-paper pl-9 pr-4 py-3 text-base font-semibold text-ink tabular-nums focus:bg-cream focus:border-accent transition-colors shadow-sm"
+              className="w-full rounded-md border border-line bg-paper pl-9 pr-4 py-2.5 text-base font-semibold text-ink font-mono focus:bg-cream focus:border-accent transition-colors shadow-sm"
               type="number"
               min="0.01"
               step="0.01"
@@ -81,7 +81,7 @@ export function CalculatorForm({ presetHourly }: { presetHourly?: number }) {
               <button
                 key={chip.value}
                 type="button"
-                className={`rounded-full px-2.5 py-1 text-[11px] font-medium transition-colors border ${
+                className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-medium transition-colors border ${
                   hourly === chip.value
                     ? "bg-accent text-cream border-accent font-semibold"
                     : "bg-paper text-muted border-line hover:border-accent hover:text-ink"
@@ -96,13 +96,13 @@ export function CalculatorForm({ presetHourly }: { presetHourly?: number }) {
 
         {/* Weekly Hours Field */}
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-ink" htmlFor="hours-week">
+          <label className="block font-mono text-[11px] font-bold uppercase tracking-wider text-ink" htmlFor="hours-week">
             Working Hours per Week
           </label>
           <div className="relative mt-2">
             <input
               id="hours-week"
-              className="w-full rounded-xl border border-line bg-paper px-4 py-3 text-base font-semibold text-ink tabular-nums focus:bg-cream focus:border-accent transition-colors shadow-sm"
+              className="w-full rounded-md border border-line bg-paper px-4 py-2.5 text-base font-semibold text-ink font-mono focus:bg-cream focus:border-accent transition-colors shadow-sm"
               type="number"
               min="0.25"
               max="168"
@@ -120,7 +120,7 @@ export function CalculatorForm({ presetHourly }: { presetHourly?: number }) {
               <button
                 key={chip.value}
                 type="button"
-                className={`rounded-full px-2.5 py-1 text-[11px] font-medium transition-colors border ${
+                className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-medium transition-colors border ${
                   hours === chip.value
                     ? "bg-accent text-cream border-accent font-semibold"
                     : "bg-paper text-muted border-line hover:border-accent hover:text-ink"
@@ -139,17 +139,17 @@ export function CalculatorForm({ presetHourly }: { presetHourly?: number }) {
       </form>
 
       {/* Output Results Panel */}
-      <section className="rounded-2xl border border-line bg-cream p-6 sm:p-7 shadow-card space-y-6">
+      <section className="rounded-xl border border-line bg-cream p-6 sm:p-7 shadow-card space-y-6">
         <div className="border-b border-line pb-4 flex items-center justify-between">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-wider text-warn">
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-warn">
               Step 2 · Mathematical Estimate
             </span>
             <h2 className="font-serif text-2xl font-semibold text-ink mt-1">
               Estimated gross earnings
             </h2>
           </div>
-          <span className="rounded-md bg-warn-bg px-2 py-0.5 text-[11px] font-bold text-warn border border-warn-border">
+          <span className="rounded-md bg-warn-bg px-2 py-0.5 font-mono text-[10px] font-bold text-warn border border-warn-border">
             Gross only
           </span>
         </div>

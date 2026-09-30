@@ -352,21 +352,24 @@ function ResolvedProvenanceCard({
   const hourlyRate = record.wage.amount;
 
   return (
-    <article className="mt-6 overflow-hidden rounded-2xl border-2 border-verified-border bg-cream shadow-lift transition-all">
+    <article className="mt-6 overflow-hidden rounded-xl border border-line bg-cream shadow-card transition-all relative">
+      {/* Signature 3px Top Accent Bar */}
+      <div className="h-1 bg-verified w-full" aria-hidden="true" />
+
       {/* Verified Header Seal */}
-      <div className="border-b border-verified-border bg-verified-bg px-5 py-3.5 sm:px-6 flex items-center justify-between flex-wrap gap-2">
+      <div className="border-b border-line bg-paper-subtle px-5 py-3 sm:px-6 flex items-center justify-between flex-wrap gap-2">
         <div className="flex items-center gap-2">
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-verified text-cream shadow-badge">
-            <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-verified text-cream shadow-badge">
+            <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
           </span>
-          <span className="text-xs font-bold uppercase tracking-wider text-verified-text">
-            Verified Collective Agreement Record
+          <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-verified-text">
+            Official TES Classification Record
           </span>
         </div>
-        <div className="flex items-center gap-2 text-[11px] font-medium text-verified-text/80">
-          <span>Last verified: {record.last_verified}</span>
+        <div className="flex items-center gap-2 font-mono text-[11px] text-muted">
+          <span>Verified: {record.last_verified}</span>
         </div>
       </div>
 
@@ -375,7 +378,7 @@ function ResolvedProvenanceCard({
         {/* Title and Classification Header */}
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-line pb-4">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-wider text-muted">
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-muted">
               {occupation?.sector?.replace(/-/g, " ") || "Occupation"}
             </span>
             <h3 className="font-serif text-2xl sm:text-3xl font-bold text-ink">
@@ -383,16 +386,16 @@ function ResolvedProvenanceCard({
             </h3>
           </div>
           <div>
-            <span className="inline-flex items-center rounded-full bg-paper px-3 py-1 text-xs font-semibold text-ink-light border border-line">
+            <span className="inline-flex items-center rounded-md bg-paper px-3 py-1 text-xs font-semibold text-ink-light border border-line font-mono">
               {classificationLabel(record.classification)}
             </span>
           </div>
         </div>
 
         {/* Primary Figures Grid */}
-        <div className="grid gap-4 sm:grid-cols-2 rounded-xl bg-paper-subtle/80 p-5 border border-line">
+        <div className="grid gap-4 sm:grid-cols-2 rounded-lg bg-paper-subtle p-5 border border-line">
           <div>
-            <span className="text-xs uppercase font-bold tracking-wider text-muted">
+            <span className="font-mono text-[11px] uppercase font-bold tracking-wider text-muted">
               Official TES Minimum Hourly
             </span>
             <div className="mt-1 flex items-baseline gap-2">
@@ -405,7 +408,7 @@ function ResolvedProvenanceCard({
 
           {engine.formatMonthlyAmount(record.wage) && (
             <div>
-              <span className="text-xs uppercase font-bold tracking-wider text-muted">
+              <span className="font-mono text-[11px] uppercase font-bold tracking-wider text-muted">
                 Monthly Scale Benchmark
               </span>
               <div className="mt-1 flex items-baseline gap-2">
@@ -427,18 +430,18 @@ function ResolvedProvenanceCard({
         </div>
 
         {/* Document Provenance Information Matrix */}
-        <div className="rounded-xl border border-line bg-paper/40 p-4">
-          <h4 className="text-[11px] font-bold uppercase tracking-wider text-muted mb-3">
-            Source & Legal Provenance
+        <div className="rounded-lg border border-line bg-paper/60 p-4">
+          <h4 className="font-mono text-[11px] font-bold uppercase tracking-wider text-muted mb-3">
+            Source &amp; Legal Provenance
           </h4>
-          <dl className="grid gap-2 text-xs sm:grid-cols-2">
+          <dl className="grid gap-3 text-xs sm:grid-cols-2">
             <div>
-              <dt className="text-muted">Collective Agreement (TES):</dt>
-              <dd className="font-semibold text-ink">{agreement?.name || "Applicable sector TES"}</dd>
+              <dt className="text-muted font-medium">Collective Agreement (TES):</dt>
+              <dd className="font-semibold text-ink mt-0.5">{agreement?.name || "Applicable sector TES"}</dd>
             </div>
             <div>
-              <dt className="text-muted">Primary Source:</dt>
-              <dd>
+              <dt className="text-muted font-medium">Primary Source Documentation:</dt>
+              <dd className="mt-0.5">
                 <a
                   href={record.source_url}
                   target="_blank"
@@ -453,16 +456,16 @@ function ResolvedProvenanceCard({
               </dd>
             </div>
             <div>
-              <dt className="text-muted">Effective Validity:</dt>
-              <dd className="font-medium text-ink tabular-nums">
+              <dt className="text-muted font-medium">Effective Validity Window:</dt>
+              <dd className="font-mono text-ink mt-0.5">
                 {record.effective_from} → {record.effective_until || "Until renewed"}
               </dd>
             </div>
             <div>
-              <dt className="text-muted">Verification Status:</dt>
-              <dd className="inline-flex items-center gap-1 text-verified font-semibold">
-                <span className="h-1.5 w-1.5 rounded-full bg-verified"></span>
-                Officially Checked
+              <dt className="text-muted font-medium">Verification Status:</dt>
+              <dd className="inline-flex items-center gap-1.5 text-verified font-semibold mt-0.5">
+                <span className="h-2 w-2 rounded-full bg-verified"></span>
+                <span>Active &amp; Sourced</span>
               </dd>
             </div>
           </dl>
@@ -470,9 +473,9 @@ function ResolvedProvenanceCard({
 
         {/* Applicable Supplements */}
         {supplements.length > 0 && (
-          <div className="rounded-xl border border-line bg-cream p-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-ink mb-2">
-              Potential Sourced Supplements (Lisät)
+          <div className="rounded-lg border border-line bg-cream p-4">
+            <h4 className="font-mono text-[11px] font-bold uppercase tracking-wider text-ink mb-2">
+              Statutory &amp; Collective Supplements (Lisät)
             </h4>
             <ul className="space-y-2 text-xs">
               {supplements.map((item) => (
@@ -480,7 +483,7 @@ function ResolvedProvenanceCard({
                   <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent shrink-0"></span>
                   <div>
                     <strong className="text-ink font-semibold">{item.name}: </strong>
-                    <span className="text-accent-dark font-medium tabular-nums">
+                    <span className="text-accent-dark font-mono font-medium">
                       {item.amount != null
                         ? `${formatEuro(item.amount)}${item.unit === "EUR_HOUR" ? " / hour" : ""}`
                         : item.calculation_rule}
@@ -495,20 +498,21 @@ function ResolvedProvenanceCard({
 
         {/* Actions & Links */}
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4 flex-wrap">
             {occupation && (
               <Link
                 href={`/wages/${pageSlug(occupation)}`}
-                className="text-xs font-semibold text-accent underline hover:text-accent-dark"
+                className="text-xs font-semibold text-accent underline hover:text-accent-dark inline-flex items-center gap-1"
               >
-                View full {occupation.name} guide & statistics →
+                <span>Full {occupation.name} guide &amp; statistics</span>
+                <span>→</span>
               </Link>
             )}
             <Link
               href={`/calculator?hourly_wage=${hourlyRate}`}
               className="text-xs font-medium text-muted hover:text-ink underline"
             >
-              Estimate weekly/monthly gross in calculator
+              Project in gross calculator
             </Link>
           </div>
           <button
