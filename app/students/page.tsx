@@ -6,7 +6,7 @@ import { studentGuides } from "@/lib/students";
 export const metadata = pageMetadata({
   title: "Students in Finland 2026 — Work Rights, 30h Limit & Jobs",
   description:
-    "Official guide for international students in Finland: 30h/week working hour limits (Aliens Act § 77), tax cards, part-time jobs, living costs, and Migri rules.",
+    "Independent practical guide for international students in Finland: 30h/week working hour limits (Aliens Act § 77), tax cards, part-time jobs, living costs, and Migri rules.",
   path: "/students",
 });
 
@@ -29,7 +29,7 @@ export default function StudentsPage() {
               name: "Students in Finland Guide",
               url: absoluteUrl("/students"),
               description:
-                "Authoritative legal and financial guide for international students working and living in Finland.",
+                "Practical and sourced guide for international students working and living in Finland.",
             }}
           />
 
@@ -48,7 +48,7 @@ export default function StudentsPage() {
             </nav>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-xs font-mono font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
-              <span>Official Legal &amp; Financial Guide for Students</span>
+              <span>Independent Student Employment &amp; Rights Guide</span>
             </div>
           </div>
 
@@ -65,15 +65,15 @@ export default function StudentsPage() {
 
             <div className="lg:col-span-4 bg-surface-container-lowest p-5 rounded-xl border border-line shadow-sm">
               <div className="flex items-center justify-between text-xs text-on-surface-variant mb-1">
-                <span className="font-bold uppercase tracking-wider text-[10px]">Academic Year 2024–2026</span>
-                <span className="font-mono text-primary font-semibold">Ulkomaalaislaki § 77</span>
+                <span className="font-bold uppercase tracking-wider text-[10px] font-mono">Academic Year 2024–2026</span>
+                <span className="font-mono text-primary font-semibold">Aliens Act § 77</span>
               </div>
               <div className="flex items-baseline gap-2">
                 <span className="font-mono text-3xl font-bold text-primary">30 h<span className="text-sm font-normal text-on-surface-variant">/wk</span></span>
-                <span className="text-xs text-on-surface-variant">statutory term-time limit</span>
+                <span className="text-xs text-on-surface-variant">term-time work limit</span>
               </div>
               <p className="mt-2 text-[11px] text-on-surface-variant">
-                Unlimited full-time work permitted during official summer & winter school vacations.
+                Full-time work permitted during university summer and winter holiday recesses.
               </p>
             </div>
           </div>
@@ -92,23 +92,23 @@ export default function StudentsPage() {
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-on-surface">Finnish Immigration Service (Migri) &amp; Aliens Act</span>
+                    <span className="text-sm font-bold text-on-surface">Finnish Immigration Service (Migri) Reference</span>
                     <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-tertiary-soft text-tertiary font-bold uppercase">
-                      Gazetted Statute
+                      Aliens Act Sourced
                     </span>
                   </div>
-                  <span className="text-xs text-on-surface-variant">Statutory reference: Ulkomaalaislaki (301/2004) § 77</span>
+                  <span className="text-xs text-on-surface-variant">Legal reference: Ulkomaalaislaki (301/2004) § 77</span>
                 </div>
               </div>
               <span className="text-xs font-mono text-on-surface-variant">
-                Active Legislation in Force
+                Verified from migri.fi
               </span>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
               <div className="lg:col-span-8 space-y-2">
                 <span className="text-xs font-mono uppercase tracking-wider text-secondary font-bold">
-                  Statutory Rule in Force
+                  Rule in Force
                 </span>
                 <h2 className="font-serif text-2xl font-semibold text-primary">
                   30 Hours Per Week Average Working Limit (Calendar Year Basis)

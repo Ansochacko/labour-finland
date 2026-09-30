@@ -29,7 +29,7 @@ export default function JobsPage() {
               name: "Jobs in Finland Guide",
               url: absoluteUrl("/jobs"),
               description:
-                "Practical, statutory guidance for job seekers and international workers in Finland.",
+                "Practical, sourced guidance for job seekers and international workers in Finland.",
             }}
           />
 
@@ -48,7 +48,7 @@ export default function JobsPage() {
             </nav>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-xs font-mono font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
-              <span>Impartial Employment Guide for Job Seekers</span>
+              <span>Independent Employment Guide for Job Seekers</span>
             </div>
           </div>
 
@@ -58,13 +58,13 @@ export default function JobsPage() {
               Navigating the Finnish job market with clarity and confidence.
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant leading-relaxed">
-              Practical, honest advice on finding work, understanding Finnish recruitment culture, preparing a compliant CV, and evaluating employment contracts under Nordic statutory norms.
+              Practical, honest advice on finding work, understanding Finnish recruitment culture, preparing a standard Finnish CV, and evaluating employment contract terms.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Statutory Provenance Notice Banner */}
+      {/* Employment Law Reference Notice Banner */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 -mt-4 relative z-20">
         <div className="bg-surface-container-lowest rounded-xl shadow-card p-5 sm:p-6 border border-line flex flex-col md:flex-row gap-4 md:items-center justify-between">
           <div className="flex items-start gap-3">
@@ -76,13 +76,13 @@ export default function JobsPage() {
             <div className="flex flex-col gap-1">
               <div className="flex items-center gap-2 flex-wrap text-xs">
                 <span className="font-mono uppercase tracking-wider text-secondary font-bold">
-                  Statutory Rule 2024–2026
+                  Key Labor Rule
                 </span>
                 <span className="text-outline">•</span>
                 <span className="text-on-surface-variant">Työsopimuslaki 55/2001 (Employment Contracts Act)</span>
               </div>
               <p className="text-xs sm:text-sm text-on-surface font-medium leading-relaxed">
-                Written employment terms are legally mandatory within one month of commencing work. The maximum statutory trial period (koeaika) is strictly capped at 6 months.
+                Written employment terms must be provided within one month of commencing work. Under Finnish law, the maximum trial period (koeaika) is capped at 6 months.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function JobsPage() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span>Verify with Työsuojelu</span>
+            <span>Check with Työsuojelu</span>
             <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
             </svg>

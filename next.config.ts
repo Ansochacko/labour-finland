@@ -27,7 +27,6 @@ const occupationRedirects = [
 const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
-  outputFileTracingRoot: __dirname,
   async redirects() {
     return [
       { source: "/index.html", destination: "/", permanent: true },

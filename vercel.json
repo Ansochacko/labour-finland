@@ -1,13 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
   "trailingSlash": false,
   "redirects": [
-    {
-      "source": "/",
-      "has": [{ "type": "host", "value": "www.labourfinland.com" }],
-      "destination": "https://labourfinland.com/",
-      "permanent": true
-    },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.labourfinland.com" }],

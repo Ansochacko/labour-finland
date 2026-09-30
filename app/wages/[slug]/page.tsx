@@ -132,14 +132,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ slu
           <div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 border-b border-line pb-4">
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-verified">
-                  Official Pay Floor
+                <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-verified">
+                  Verified Minimum Pay Floor
                 </span>
                 <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-ink mt-1">
                   Collective-Agreement Wage Scale
                 </h2>
               </div>
-              <div className="text-xs text-muted">
+              <div className="font-mono text-xs text-muted">
                 Valid: <strong className="text-ink">{records[0].effective_from}</strong> to{" "}
                 <strong className="text-ink">{records[0].effective_until || "open"}</strong>
               </div>
@@ -194,20 +194,20 @@ export default async function OccupationPage({ params }: { params: Promise<{ slu
         <section className="mt-14 rounded-2xl border border-line bg-cream p-6 sm:p-8 shadow-card">
           <div className="flex items-center justify-between flex-wrap gap-2 border-b border-line pb-4">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-muted">
-                Official Government Statistics
+              <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-muted">
+                National Earnings Benchmark
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-ink mt-1">
-                Statistics Finland 2024 Earnings
+                Statistics Finland 2024 Earnings Context
               </h2>
             </div>
-            <span className="rounded-full bg-paper px-3 py-1 text-[11px] font-semibold text-muted border border-line">
+            <span className="rounded-full bg-paper px-3 py-1 font-mono text-[11px] font-semibold text-muted border border-line">
               ISCO Code {statfin.isco_code}
             </span>
           </div>
 
           <p className="mt-4 text-xs sm:text-sm text-muted leading-relaxed max-w-3xl">
-            Official Structure of Earnings figures for <strong className="text-ink">{statfin.statfin_occupation}</strong>. Full-time employees, all sectors, sexes total. This represents overall market earnings across Finland and is <span className="underline decoration-warn font-semibold text-ink">not a legal TES pay minimum</span>.
+            National Structure of Earnings figures for <strong className="text-ink">{statfin.statfin_occupation}</strong>. Full-time employees, all sectors, sexes total. This represents overall market earnings across Finland and is <span className="underline decoration-warn font-semibold text-ink">not a legal TES pay minimum</span>.
           </p>
 
           <dl className="mt-6 grid gap-4 sm:grid-cols-3">

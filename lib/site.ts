@@ -3,7 +3,7 @@ export const SITE = {
   url: "https://labourfinland.com",
   tagline: "Understand your pay in Finland.",
   description:
-    "Independent, sourced wage and working-life information for people working in or moving to Finland. Official TES scales, Statistics Finland data, and clear rules.",
+    "Independent, sourced wage and working-life information for people working in or moving to Finland. Verified TES scales, Statistics Finland data, and clear rules.",
   independence:
     "Labour Finland is an independent information service and is not affiliated with or operated by the Finnish government, any public authority, trade union, employer organisation or recruitment agency.",
   disclaimer:

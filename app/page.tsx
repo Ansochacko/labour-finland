@@ -19,9 +19,9 @@ export default function HomePage() {
       {/* Editorial Hero Section */}
       <section className="mx-auto max-w-6xl px-4 pt-14 pb-10 sm:px-6 lg:pt-20 lg:pb-16">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-line bg-cream px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-dark shadow-sm">
+          <div className="inline-flex items-center gap-2 rounded-full border border-line bg-cream px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-dark shadow-sm font-mono">
             <span className="h-1.5 w-1.5 rounded-full bg-accent"></span>
-            Independent · Sourced · Official TES Data
+            Independent · Sourced · Verified TES Data
           </div>
 
           <h1 className="mt-5 font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-[1.12] text-ink tracking-tight">
@@ -51,14 +51,14 @@ export default function HomePage() {
 
           {/* Quick occupation pills */}
           <div className="mt-5 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold uppercase tracking-wider text-muted mr-1">
+            <span className="text-xs font-semibold uppercase tracking-wider text-muted mr-1 font-mono">
               Popular:
             </span>
             {popular.map((occupation) => (
               <Link
                 key={occupation.id}
                 href={`/wages/${pageSlug(occupation)}`}
-                className="inline-flex items-center gap-1.5 rounded-full border border-line bg-cream px-3.5 py-1.5 text-xs font-medium text-ink-light no-underline shadow-sm hover:border-accent hover:text-accent hover:bg-paper transition-all"
+                className="inline-flex items-center gap-1.5 rounded-md border border-line bg-cream px-3.5 py-1.5 text-xs font-medium text-ink-light no-underline shadow-sm hover:border-accent hover:text-accent hover:bg-paper transition-all"
               >
                 <span>{occupation.name}</span>
                 <span className="text-[10px] text-muted">→</span>
@@ -97,23 +97,23 @@ export default function HomePage() {
 
       {/* The Trust Standard: Archival Ledger Section */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="rounded-3xl border border-line bg-cream p-8 sm:p-12 shadow-card">
+        <div className="rounded-xl border border-line bg-cream p-8 sm:p-12 shadow-card">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent">
+            <span className="font-mono text-xs font-bold uppercase tracking-widest text-accent">
               Our Publication Standard
             </span>
             <h2 className="mt-2 font-serif text-3xl sm:text-4xl font-semibold text-ink">
               Source → Date → Number → Explanation
             </h2>
             <p className="mt-4 text-muted leading-relaxed">
-              Every wage figure published on Labour Finland is tied to an official collective agreement text or Statistics Finland dataset. If a figure has not been officially verified, it is marked as unverified — never estimated.
+              Every wage figure published on Labour Finland is tied to a primary collective agreement text or Statistics Finland dataset. If a figure has not been verified from primary documentation, it is marked as unverified — never estimated.
             </p>
           </div>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <TrustPillar
               step="01"
-              title="Official Primary Sources"
+              title="Primary Agreement Texts"
               description="Extracted directly from published trade union and employer collective agreements (e.g. PAM, Tehy, Rakennusliitto)."
             />
             <TrustPillar
@@ -123,8 +123,8 @@ export default function HomePage() {
             />
             <TrustPillar
               step="03"
-              title="Official Statistics Context"
-              description="Separately displays Structure of Earnings 2024 data (CC BY 4.0) so users can compare legal floors with market medians."
+              title="Statistics Finland Context"
+              description="Separately displays Structure of Earnings 2024 data (CC BY 4.0) so users can compare agreement floors with market medians."
             />
             <TrustPillar
               step="04"
